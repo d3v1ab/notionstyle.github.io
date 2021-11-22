@@ -1,0 +1,216 @@
+:root {
+  --color-text-default: #FFFFFF;
+  --color-text-gray:#8A8A8A;
+  --site-background: #161616;
+  --site-bg-dark: #000000;
+}
+.super-content{
+  padding: 0;
+}
+.super-content.max-width {
+  max-width: none;
+}
+.super-navbar__content{
+    max-width: 1400px;
+    margin: auto;
+}
+.notion-header{
+  display: none;
+}
+body{
+  background: var(--site-background);
+}
+
+h1{
+ font-size: 80px !important;
+}
+
+h2{
+ font-size: 35px !important;
+}
+
+p{
+  font-size: 20px;
+}
+.super-content .notion-callout .notion-text__content .notion-link {
+    border: 2.5px solid var(--color-text-yellow);
+    padding: 5px 26px;
+    margin-top: 11px;
+    display: inline-block;
+    border-radius: 26px;
+    text-size-adjust: 18pt;
+    font-size: 13pt;
+
+}
+.super-content .notion-callout .notion-text__content .notion-link:hover{
+  transition: .3s ease-in-out;
+  opacity: 0.8;
+  
+}
+.super-content .notion-text__content .notion-semantic-string .link{
+  opacity: 1;
+} 
+img{
+  overflow: hidden;
+}
+img:hover{
+  transition: .3s ease-in-out;
+  filter: opacity(0.5);
+  cursor: pointer;
+  transform: scale(1.02);
+}
+
+.notion-bookmark{
+  overflow: hidden;
+   background-color:#000000;
+  border:none;
+  border-radius: 20px;
+
+}
+.notion-bookmark:hover{
+  background-color: var(--site-background);
+}
+
+
+/* NOTION CALLOUT */
+.notion-callout {
+  align-items: center;
+}
+.notion-callout.border{
+  border:none;
+}
+.notion-callout .notion-callout__icon{
+  display: none;
+}
+.notion-callout .notion-callout__content {
+  width: 100%;
+  margin:0;
+}
+
+.notion-callout .notion-callout__content > span {
+  display: none;
+}
+.notion-text__children{
+  margin:0;
+}
+/* BLOCK SETTINGS */
+#block-6ed2013368a546d797f44964a7a56de6,
+#block-ce5a377c89574ea6ad3170b29e51a44c , #block-6ed2013368a546d797f44964a7a56de6{
+  background-color: var(--site-bg-dark);
+}
+#block-1f2f792fb8314599b5d8f3a84d91669c,
+#block-dbc9ab7a637c4c098a5a8bb3d63477cb,
+#block-ce5a377c89574ea6ad3170b29e51a44c .notion-callout__content ,
+#block-70151fd4379c4e4c9bc7641e51ccef94, #block-6ed2013368a546d797f44964a7a56de6 > .notion-callout__content{
+      max-width: 1400px;
+      padding-top: 120px;
+      padding-bottom:120px;
+    margin: auto;
+}
+
+/* HERO */
+#block-70151fd4379c4e4c9bc7641e51ccef94{
+    min-height: 800px;
+     background: url(/_next/image?url=https%3A%2F%2Fsuper-static-assets.s3.amazonaws.com%2Fcd4afc2f-4015-4229-b03a-9949a3ede8bf%2Fimages%2F4daf9a33-2d3f-4c71-8cdd-96b96f2a2137.png&w=640&q=80) no-repeat left 216px; 
+    background-size: 706px;
+}
+#block-a92217555c9944aaa2dad35d45cf1221{display:none}
+
+/* INFO */
+
+#block-1755663fd51f4e42b3c38391e79b6ac7{
+  flex-flow: row;
+}
+
+#block-fe0fcddbe75f4eb0820d10ef0cf52fcf,#block-2b15bbc10e854a4a88f5987054505af1{
+  padding-top: 35px;
+}
+
+/* PORTFOLIO */
+#block-dbc9ab7a637c4c098a5a8bb3d63477cb{
+   overflow: visible;
+    position: relative;
+  width: 100%;
+}
+#block-e2ea8d887c4b49c9a81aaf77e053d087{
+    background: var(--color-text-yellow);
+    position: absolute;
+    width: 1100px;
+    left: 50%;
+   transform: translate(-50%, 0%);
+   bottom:-4%;
+    color: #000000;
+    border-radius: 20px;
+}
+
+/* Testimonials */
+#block-fa08d4559ed7401abcb1682dce616be0,#block-69b6a9775781434dae585d74eafe9688{
+  text-align: center;
+}
+
+#block-ce5a377c89574ea6ad3170b29e51a44c .notion-callout {
+  text-align: center;
+  border-radius: 20px;
+  background: var(--site-background);
+  padding: 20px;
+}
+#block-ce5a377c89574ea6ad3170b29e51a44c .notion-callout .notion-callout__content {
+  padding: 0;
+} 
+
+/* FOOTER */
+#block-de8d53fb7cbc4568847c0a942867cee1 {
+    text-align: center;
+    margin: auto;
+    margin-top: 10%;
+}
+#block-d55743eea9ea431bbc90850a10c89a8d{
+  width: 200px; margin: auto;
+}
+#block-5fce83c553be46778fede5c278ea8f62 #block-d55743eea9ea431bbc90850a10c89a8d .notion-column {
+  
+  width: 30px !important;
+
+  margin: 30px 15px !important;
+  
+  padding:0 !important;
+}
+
+
+@media only screen and (max-width: 600px) {
+  /* SOCIAL MEDIA ICON DISPLAY VERTICAL */
+  #block-9d6ab013463a433a9ae3324eb8753ea9 {
+    width: 200px;
+    flex-flow:row;
+  }
+  /* HIDE HERO AVATAR */
+  #block-70151fd4379c4e4c9bc7641e51ccef94{
+    background:none;
+  }
+  /* HIDE QUICK CONTACT */
+  #block-e2ea8d887c4b49c9a81aaf77e053d087{
+    display: none;
+  }
+  
+  #block-1f2f792fb8314599b5d8f3a84d91669c,
+#block-dbc9ab7a637c4c098a5a8bb3d63477cb,
+#block-ce5a377c89574ea6ad3170b29e51a44c .notion-callout__content ,
+#block-70151fd4379c4e4c9bc7641e51ccef94, #block-6ed2013368a546d797f44964a7a56de6 > .notion-callout__content{
+  margin: 5px;
+}
+
+}
+
+
+/*@media only screen and (min-width: 650px) {*/
+  
+
+/*}*/
+
+/*@media only screen and (min-width: 992px) {*/
+
+/*}*/
+
+/*@media only screen and (min-width: 1200px) {...}*/
+
+*/
