@@ -34,7 +34,7 @@ p {
 }
 .super-content .notion-callout .notion-text__content .notion-link {
   border: 2.5px solid var(--color-text-yellow) !important;
-  padding: 5px 26px;
+  padding: 5px 26px !important;
   margin-top: 11px;
   display: inline-block;
   border-radius: 26px;
@@ -76,18 +76,18 @@ img:hover {
   border: none !important;
 }
 .notion-callout .notion-callout__icon {
-  display: none;
+  display: none !important;
 }
 .notion-callout .notion-callout__content {
-  width: 100%;
-  margin: 0;
+  width: 100% !important;
+  margin: 0 !important;
 }
 
 .notion-callout .notion-callout__content > span {
   display: none;
 }
 .notion-text__children {
-  margin: 0;
+  margin: 0 !important;
 }
 /* BLOCK SETTINGS */
 #block-6ed2013368a546d797f44964a7a56de6,
@@ -109,7 +109,7 @@ img:hover {
 /* HERO */
 #block-70151fd4379c4e4c9bc7641e51ccef94 {
   min-height: 800px;
-  background: url(/_next/image?url=https%3A%2F%2Fsuper-static-assets.s3.amazonaws.com%2Fcd4afc2f-4015-4229-b03a-9949a3ede8bf%2Fimages%2F4daf9a33-2d3f-4c71-8cdd-96b96f2a2137.png&w=640&q=80)
+  background: url(https://luis.super.site/_next/image?url=https%3A%2F%2Fsuper-static-assets.s3.amazonaws.com%2Fcd4afc2f-4015-4229-b03a-9949a3ede8bf%2Fimages%2F4daf9a33-2d3f-4c71-8cdd-96b96f2a2137.png&w=640&q=80)
     no-repeat left 216px;
   background-size: 706px;
 }
