@@ -33,15 +33,13 @@ p {
   font-size: 20px;
 }
 .super-content .notion-callout .notion-text__content .notion-link {
-  background: var(--color-text-yellow);
-  position: absolute;
-  width: 1100px;
-  left: 50%;
-  transform: translate(-50%, 0%);
-  bottom: -4%;
-  color: rgb(0, 0, 0);
-  border-radius: 20px;
-  padding: 10px 30px;
+  border: 2.5px solid var(--color-text-yellow) !important;
+  padding: 5px 26px;
+  margin-top: 11px;
+  display: inline-block;
+  border-radius: 26px;
+  text-size-adjust: 18pt;
+  font-size: 13pt;
 }
 .super-content .notion-callout .notion-text__content .notion-link:hover {
   transition: 0.3s ease-in-out;
