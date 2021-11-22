@@ -90,16 +90,15 @@ img:hover {
   margin: 0 !important;
 }
 /* BLOCK SETTINGS */
-#block-6ed2013368a546d797f44964a7a56de6,
-#block-ce5a377c89574ea6ad3170b29e51a44c,
-#block-6ed2013368a546d797f44964a7a56de6 {
+#block-bece32ecb68a4b86a957d6a4544ee325,
+#block-83c01cc95ec8469480563c7bbb8acd8d {
   background-color: var(--site-bg-dark);
 }
-#block-1f2f792fb8314599b5d8f3a84d91669c,
-#block-dbc9ab7a637c4c098a5a8bb3d63477cb,
-#block-ce5a377c89574ea6ad3170b29e51a44c .notion-callout__content,
-#block-70151fd4379c4e4c9bc7641e51ccef94,
-#block-6ed2013368a546d797f44964a7a56de6 > .notion-callout__content {
+#block-c2b400fe00c745ff93e64a108163add8,
+#block-b95c217140574ff1a49a4aee9636ad70,
+#block-bece32ecb68a4b86a957d6a4544ee325 .notion-callout__content,
+#block-83c01cc95ec8469480563c7bbb8acd8d,
+#block-83c01cc95ec8469480563c7bbb8acd8d > .notion-callout__content {
   max-width: 1400px;
   padding-top: 120px;
   padding-bottom: 120px;
@@ -107,34 +106,34 @@ img:hover {
 }
 
 /* HERO */
-#block-70151fd4379c4e4c9bc7641e51ccef94 {
+#block-83c01cc95ec8469480563c7bbb8acd8d {
   min-height: 800px;
   background: url(https://rinconelloinc.super.site/_next/image?url=https%3A%2F%2Fsuper-static-assets.s3.amazonaws.com%2Fcd4afc2f-4015-4229-b03a-9949a3ede8bf%2Fimages%2F4daf9a33-2d3f-4c71-8cdd-96b96f2a2137.png&w=640&q=80)
     no-repeat left 216px;
   background-size: 706px;
 }
-#block-a92217555c9944aaa2dad35d45cf1221 {
+#block-48585b2ff1a6461cba5dd62949cc2a45 {
   display: none;
 }
 
 /* INFO */
 
-#block-1755663fd51f4e42b3c38391e79b6ac7 {
+#block-1e11c9e338764ec0a552d875027f47d1 {
   flex-flow: row;
 }
 
-#block-fe0fcddbe75f4eb0820d10ef0cf52fcf,
-#block-2b15bbc10e854a4a88f5987054505af1 {
+#block-adbf317183a24395bfaf7a92ce4c039c,
+#block-571f056c27be442588ba718774b1728e {
   padding-top: 35px;
 }
 
 /* PORTFOLIO */
-#block-dbc9ab7a637c4c098a5a8bb3d63477cb {
+#block-b95c217140574ff1a49a4aee9636ad70 {
   overflow: visible;
   position: relative;
   width: 100%;
 }
-#block-e2ea8d887c4b49c9a81aaf77e053d087 {
+#block-0b51cba6f3c043efaee8a3c9604aa9a3 {
   background: var(--color-text-yellow);
   position: absolute;
   width: 1100px;
@@ -146,25 +145,25 @@ img:hover {
 }
 
 /* Testimonials */
-#block-fa08d4559ed7401abcb1682dce616be0,
-#block-69b6a9775781434dae585d74eafe9688 {
+#block-4adc42d2025b45f49df3e996c376953a,
+#block-cda863888b874e589ce4e9a8236e601e {
   text-align: center;
 }
 
-#block-ce5a377c89574ea6ad3170b29e51a44c .notion-callout {
+#block-bece32ecb68a4b86a957d6a4544ee325 .notion-callout {
   text-align: center;
   border-radius: 20px;
   background: var(--site-background);
   padding: 20px;
 }
-#block-ce5a377c89574ea6ad3170b29e51a44c
+#block-bece32ecb68a4b86a957d6a4544ee325
   .notion-callout
   .notion-callout__content {
   padding: 0;
 }
 
 /* FOOTER */
-#block-de8d53fb7cbc4568847c0a942867cee1 {
+#block-ab73b0987f56405fa50502c37dc9ee33 {
   text-align: center;
   margin: auto;
   margin-top: 10%;
@@ -190,7 +189,7 @@ img:hover {
     flex-flow: row;
   }
   /* HIDE HERO AVATAR */
-  #block-70151fd4379c4e4c9bc7641e51ccef94 {
+  #block-83c01cc95ec8469480563c7bbb8acd8d {
     background: none;
   }
   /* HIDE QUICK CONTACT */
@@ -198,11 +197,11 @@ img:hover {
     display: none;
   }
 
-  #block-1f2f792fb8314599b5d8f3a84d91669c,
-  #block-dbc9ab7a637c4c098a5a8bb3d63477cb,
-  #block-ce5a377c89574ea6ad3170b29e51a44c .notion-callout__content,
-  #block-70151fd4379c4e4c9bc7641e51ccef94,
-  #block-6ed2013368a546d797f44964a7a56de6 > .notion-callout__content {
+  #block-c2b400fe00c745ff93e64a108163add8,
+  #block-b95c217140574ff1a49a4aee9636ad70,
+  #block-bece32ecb68a4b86a957d6a4544ee325 .notion-callout__content,
+  #block-83c01cc95ec8469480563c7bbb8acd8d,
+  #block-83c01cc95ec8469480563c7bbb8acd8d > .notion-callout__content {
     margin: 5px;
   }
 }
