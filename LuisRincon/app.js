@@ -1,12 +1,12 @@
 window.addEventListener("load", function () {
   let blocks = [
-    { id: "block-8528067e63d34d10ad6a8269619a418f", animation: "fade-down" },
-    { id: "block-98f96e4c717e4532a9f3e692fde63377", animation: "fade-left" },
-    { id: "block-754706237af94d7c8a0b250150e8f070", animation: "fade-right" },
-    { id: "block-a78233bab0e147abacdb42d94c6a1c81", animation: "fade-up" },
-    { id: "block-3cef7952f9ef4b6aaf7fec853e301055", animation: "zoom-in" },
-    { id: "block-1c48b93209c44d8580a9939246544736", animation: "zoom-in" },
-    { id: "block-85efc80540fb49e5bcb6d82926a2fc06", animation: "zoom-in" },
+    { id: "block-1aa355c6d5d04406a8e0e3670b080366", animation: "fade-down" },
+    { id: "block-6f7007a236aa44259c5463e17ce75991", animation: "fade-left" },
+    { id: "block-7c23c29eec4f40678805a16447465b62", animation: "fade-right" },
+    { id: "block-3c4317dc45e24cbba73de68745d7c986", animation: "fade-up" },
+    { id: "block-088cd82d53eb4658bd2af0d121d85e77", animation: "zoom-in" },
+    { id: "block-896cc062886d425ca965583c65292532", animation: "zoom-in" },
+    { id: "block-f75993332e55445ab1c6653ae1995522", animation: "zoom-in" },
   ];
 
   AOS.init();
