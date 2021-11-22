@@ -1,24 +1,24 @@
 :root {
-  --color-text-default: #ffffff;
-  --color-text-gray: #8a8a8a;
-  --site-background: #161616;
-  --site-bg-dark: #000000;
+  --color-text-default: #ffffff !important;
+  --color-text-gray: #8a8a8a !important;
+  --site-background: #161616 !important;
+  --site-bg-dark: #000000 !important;
 }
 .super-content {
-  padding: 0;
+  padding: 0 !important;
 }
 .super-content.max-width {
   max-width: none;
 }
 .super-navbar__content {
-  max-width: 1400px;
-  margin: auto;
+  max-width: 1400px !important;
+  margin: auto !important;
 }
 .notion-header {
   display: none;
 }
 body {
-  background: var(--site-background);
+  background: var(--site-background) !important;
 }
 
 h1 {
@@ -33,7 +33,7 @@ p {
   font-size: 20px;
 }
 .super-content .notion-callout .notion-text__content .notion-link {
-  border: 2.5px solid var(--color-text-yellow);
+  border: 2.5px solid var(--color-text-yellow) !important;
   padding: 5px 26px;
   margin-top: 11px;
   display: inline-block;
@@ -59,13 +59,13 @@ img:hover {
 }
 
 .notion-bookmark {
-  overflow: hidden;
-  background-color: #000000;
-  border: none;
+  overflow: hidden !important;
+  background-color: #000000 !important;
+  border: none !important;
   border-radius: 20px;
 }
 .notion-bookmark:hover {
-  background-color: var(--site-background);
+  background-color: var(--site-background) !important;
 }
 
 /* NOTION CALLOUT */
@@ -73,7 +73,7 @@ img:hover {
   align-items: center;
 }
 .notion-callout.border {
-  border: none;
+  border: none !important;
 }
 .notion-callout .notion-callout__icon {
   display: none;
