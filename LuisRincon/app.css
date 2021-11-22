@@ -103,7 +103,7 @@ img:hover {
   max-width: 1400px;
   padding-top: 120px;
   padding-bottom: 120px;
-  margin: auto;
+  margin: auto !important;
 }
 
 /* HERO */
