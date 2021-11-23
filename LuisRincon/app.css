@@ -136,13 +136,12 @@ img:hover {
 #block-0b51cba6f3c043efaee8a3c9604aa9a3 {
   background: #fdb933;
   position: absolute;
-  width: 1400px;
+  width: 1100px;
   left: 50%;
   transform: translate(-50%, 0%);
   bottom: -4%;
   color: #000000;
   border-radius: 20px;
-  padding: 10px 36px;
 }
 
 /* Testimonials */
@@ -207,12 +206,16 @@ img:hover {
   }
 }
 
-/*@media only screen and (min-width: 650px) {*/
+/* @media only screen and (min-width: 650px) {
+  #block-e2ea8d887c4b49c9a81aaf77e053d087 {
+    display: none;
+  }
+}
 
-/*}*/
-
-/*@media only screen and (min-width: 992px) {*/
-
-/*}*/
+@media only screen and (min-width: 992px) {
+  #block-e2ea8d887c4b49c9a81aaf77e053d087 {
+    display: none;
+  }
+} */
 
 /*@media only screen and (min-width: 1200px) {...}*/
