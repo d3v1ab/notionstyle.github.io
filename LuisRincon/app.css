@@ -41,7 +41,7 @@ h3 {
 
 /* heading column */
 .notion-column > .notion-heading:first-of-type {
-  margin-top: 10px;
+  margin-top: 10px !important;
 }
 /* MAIN BUTTON */
 .notion-callout .notion-text__content .notion-link {
