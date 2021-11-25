@@ -1,38 +1,46 @@
+/* START: GLOBAL CONFIG */
 :root {
   --color-text-default: #ffffff !important;
   --color-text-gray: #8a8a8a !important;
   --site-background: #161616 !important;
   --site-bg-dark: #000000 !important;
 }
-.super-content {
+
+/* WEBSITE BACKGROUND */
+body {
+  background: var(--site-background) !important;
   padding: 0 !important;
+}
+.super-content {
+  max-width: 1100px !important;
+  margin: auto;
+  padding: 10px !important;
 }
 .super-content.max-width {
   max-width: none;
 }
-.super-navbar__content {
-  max-width: 1400px !important;
-  margin: auto !important;
-}
-.notion-header {
-  display: none;
-}
-body {
-  background: var(--site-background) !important;
+.notion-header__cover {
+  max-height: 43vh;
+  height: 41vh;
 }
 
+/* text styles */
 h1 {
-  font-size: 80px !important;
+  font-size: 70px !important;
 }
-
 h2 {
-  font-size: 35px !important;
+  font-size: 30px !important;
+}
+h3 {
+  font-size: 25px !important;
 }
 
-p {
-  font-size: 20px;
+/* heading column */
+.notion-column > .notion-heading:first-of-type {
+  margin-top: 10px;
 }
-.super-content .notion-callout .notion-text__content .notion-link {
+/* MAIN BUTTON */
+.notion-callout .notion-text__content .notion-link {
   border: 2.5px solid var(--color-text-yellow) !important;
   padding: 5px 26px;
   margin-top: 11px;
@@ -40,128 +48,127 @@ p {
   border-radius: 26px;
   text-size-adjust: 18pt;
   font-size: 13pt;
-}
-.super-content .notion-callout .notion-text__content .notion-link:hover {
-  transition: 0.3s ease-in-out;
-  opacity: 0.8;
-}
-.super-content .notion-text__content .notion-semantic-string .link {
   opacity: 1;
 }
-img {
-  overflow: hidden;
-}
-img:hover {
-  transition: 0.3s ease-in-out;
-  filter: opacity(0.5);
-  cursor: pointer;
-  transform: scale(1.02);
+.notion-callout .notion-text__content .notion-link:hover {
+  transition: 0.1s ease-in-out;
+  opacity: 0.8;
 }
 
-.notion-bookmark {
-  overflow: hidden !important;
-  background-color: #000000 !important;
-  border: none !important;
-  border-radius: 20px;
-}
-.notion-bookmark:hover {
-  background-color: var(--site-background) !important;
-}
-
-/* NOTION CALLOUT */
+/* NOTION CALLOUT ACT LIKE A CONTAINER */
 .notion-callout {
-  align-items: center;
-}
-.notion-callout.border {
+  width: 100%;
+  margin: auto !important;
   border: none !important;
+  border-radius: none !important;
+  padding: 50px 20px;
 }
-.notion-callout .notion-callout__icon {
+.notion-callout__icon {
   display: none !important;
 }
-.notion-callout .notion-callout__content {
+/* The callout content*/
+.notion-callout__content {
+  max-width: 1100px;
   width: 100% !important;
+  margin: auto !important;
+}
+.notion-callout__content .notion-text__children {
+  padding: 0 !important;
   margin: 0 !important;
 }
-
 .notion-callout .notion-callout__content > span {
   display: none;
 }
-.notion-text__children {
-  margin: 0 !important;
+/* NOTION COLLECTION */
+.notion-collection-gallery {
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)) !important;
 }
-/* BLOCK SETTINGS */
-#block-bece32ecb68a4b86a957d6a4544ee325,
-#block-14c19c63599246b1b3e7cb40cee3f231 {
-  background-color: var(--site-bg-dark);
+.notion-collection-card {
+  overflow: hidden;
+  border-radius: 20px;
+  background: none !important;
 }
-#block-c2b400fe00c745ff93e64a108163add8,
-#block-b95c217140574ff1a49a4aee9636ad70,
-#block-bece32ecb68a4b86a957d6a4544ee325 .notion-callout__content,
-#block-83c01cc95ec8469480563c7bbb8acd8d,
-#block-14c19c63599246b1b3e7cb40cee3f231 > .notion-callout__content {
-  max-width: 1400px;
-  padding-top: 120px;
-  padding-bottom: 120px;
-  margin: auto !important;
+.notion-collection-card__cover {
+  border: none;
+}
+.notion-collection-card:hover {
+  transition: 0.1s ease-in-out;
+  opacity: 0.9;
+}
+.notion-collection__header,
+.notion-header__content {
+  display: none;
+}
+.notion-property {
+  display: none !important;
 }
 
+/* BOOKMARK */
+.notion-bookmark {
+  overflow: hidden !important;
+  background-color: var(--site-bg-dark) !important;
+  border: 2px solid var(--site-bg-dark) !important;
+  border-radius: 20px;
+}
+.notion-bookmark:hover {
+  border: 2px solid var(--site-bg-dark) !important;
+  background-color: var(--site-background) !important;
+}
+
+/* END: GLOBAL CONFIG */
+
+/* START: CUSTOM ELEMENT STYLES */
 /* HERO */
 #block-83c01cc95ec8469480563c7bbb8acd8d {
-  min-height: 800px;
+  padding-bottom: 0;
+}
+#block-93a31ca2907943e89a0793dd1f44a997 {
+  padding-bottom: 80px;
+  /*padding-bottom: 0;*/
+}
+#block-93a31ca2907943e89a0793dd1f44a997 {
   background: url(https://rinconelloinc.super.site/_next/image?url=https%3A%2F%2Fsuper-static-assets.s3.amazonaws.com%2Fcd4afc2f-4015-4229-b03a-9949a3ede8bf%2Fimages%2F4daf9a33-2d3f-4c71-8cdd-96b96f2a2137.png&w=640&q=80)
-    no-repeat left 216px;
-  background-size: 706px;
+    no-repeat left 10px;
+  background-size: 556px;
 }
 #block-48585b2ff1a6461cba5dd62949cc2a45 {
   display: none;
 }
-
-/* INFO */
-
-#block-1e11c9e338764ec0a552d875027f47d1 {
-  flex-flow: row;
+/* CLAIM */
+#block-14c19c63599246b1b3e7cb40cee3f231 {
+  background: var(--site-bg-dark);
 }
 
-#block-adbf317183a24395bfaf7a92ce4c039c,
-#block-571f056c27be442588ba718774b1728e {
-  padding-top: 35px;
-}
-
-/* PORTFOLIO */
-#block-b95c217140574ff1a49a4aee9636ad70 {
-  overflow: visible;
-  position: relative;
-  width: 100%;
-}
-#block-0b51cba6f3c043efaee8a3c9604aa9a3 {
-  background: #fdb933;
-  position: absolute;
-  width: 1100px;
-  left: 50%;
-  transform: translate(-50%, 0%);
-  bottom: -4%;
-  color: #000000;
-  border-radius: 20px;
-}
-
-/* Testimonials */
-#block-4adc42d2025b45f49df3e996c376953a,
-#block-cda863888b874e589ce4e9a8236e601e {
+/* reviews */
+#block-bece32ecb68a4b86a957d6a4544ee325 {
   text-align: center;
+  background: var(--site-bg-dark);
 }
 
 #block-bece32ecb68a4b86a957d6a4544ee325 .notion-callout {
-  text-align: center;
   border-radius: 20px;
   background: var(--site-background);
   padding: 20px;
 }
-#block-bece32ecb68a4b86a957d6a4544ee325
-  .notion-callout
-  .notion-callout__content {
-  padding: 0;
-}
 
+/* social media */
+#block-0b51cba6f3c043efaee8a3c9604aa9a3 {
+  padding: 0;
+  color: var(--site-bg-dark);
+  background: #fdb933;
+}
+#block-58fbdb4b7b144260aea22eb8f990081b,
+#block-c5e79ce0bfbd402bb0e91ac7341ee0d7 {
+  padding: 0;
+  margin: 0px 37px;
+  flex-flow: row;
+}
+#block-0b51cba6f3c043efaee8a3c9604aa9a3 .notion-image {
+  min-width: 30px !important;
+  width: 30px !important;
+  display: inline-block !important;
+  margin: auto;
+}
 /* FOOTER */
 #block-ab73b0987f56405fa50502c37dc9ee33 {
   text-align: center;
@@ -182,40 +189,27 @@ img:hover {
   padding: 0 !important;
 }
 
+/* END: CUSTOM ELEMENT STYLES*/
+
+/* Start: Responsive*/
 @media only screen and (max-width: 600px) {
-  /* SOCIAL MEDIA ICON DISPLAY VERTICAL */
-  #block-9d6ab013463a433a9ae3324eb8753ea9 {
-    width: 200px;
-    flex-flow: row;
+  h1 {
+    font-size: 45px !important;
   }
-  /* HIDE HERO AVATAR */
-  #block-83c01cc95ec8469480563c7bbb8acd8d {
+  h2 {
+    font-size: 28px !important;
+  }
+  h3 {
+    font-size: 20px !important;
+  }
+  body {
+    text-align: center;
+  }
+  /* HERO */
+  #block-48585b2ff1a6461cba5dd62949cc2a45 {
+    display: block;
+  }
+  #block-93a31ca2907943e89a0793dd1f44a997 {
     background: none;
   }
-  /* HIDE QUICK CONTACT */
-  #block-e2ea8d887c4b49c9a81aaf77e053d087 {
-    display: none;
-  }
-
-  #block-c2b400fe00c745ff93e64a108163add8,
-  #block-b95c217140574ff1a49a4aee9636ad70,
-  #block-bece32ecb68a4b86a957d6a4544ee325 .notion-callout__content,
-  #block-83c01cc95ec8469480563c7bbb8acd8d,
-  #block-83c01cc95ec8469480563c7bbb8acd8d > .notion-callout__content {
-    margin: 5px;
-  }
 }
-
-/* @media only screen and (min-width: 650px) {
-  #block-e2ea8d887c4b49c9a81aaf77e053d087 {
-    display: none;
-  }
-}
-
-@media only screen and (min-width: 992px) {
-  #block-e2ea8d887c4b49c9a81aaf77e053d087 {
-    display: none;
-  }
-} */
-
-/*@media only screen and (min-width: 1200px) {...}*/
