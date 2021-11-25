@@ -97,7 +97,7 @@ h3 {
 }
 .notion-collection__header,
 .notion-header__content {
-  display: none;
+  display: none !important;
 }
 .notion-property {
   display: none !important;
