@@ -141,10 +141,12 @@ h3 {
 /* CLAIM */
 #block-14c19c63599246b1b3e7cb40cee3f231 {
   background: var(--site-bg-dark);
+  padding: 83px 0;
 }
 
 /* reviews */
 #block-bece32ecb68a4b86a957d6a4544ee325 {
+  padding: 83px 0;
   text-align: center;
   background: var(--site-bg-dark);
 }
