@@ -44,7 +44,7 @@ h3 {
   margin-top: 10px !important;
 }
 /* MAIN BUTTON */
-.notion-callout .notion-text__content .notion-link {
+.notion-text__content .notion-link {
   border: 2.5px solid var(--color-text-yellow) !important;
   padding: 5px 26px;
   margin-top: 11px;
@@ -132,8 +132,8 @@ h3 {
 }
 #block-93a31ca2907943e89a0793dd1f44a997 {
   background: url(https://rinconelloinc.super.site/_next/image?url=https%3A%2F%2Fsuper-static-assets.s3.amazonaws.com%2Fcd4afc2f-4015-4229-b03a-9949a3ede8bf%2Fimages%2F4daf9a33-2d3f-4c71-8cdd-96b96f2a2137.png&w=640&q=80)
-    no-repeat left 10px;
-  background-size: 556px;
+    no-repeat -66px 11px;
+  background-size: 604px;
 }
 #block-48585b2ff1a6461cba5dd62949cc2a45 {
   display: none;
@@ -217,5 +217,17 @@ h3 {
   }
   #block-93a31ca2907943e89a0793dd1f44a997 {
     background: none;
+  }
+  /* CONTACT */
+  #block-14c19c63599246b1b3e7cb40cee3f231 {
+    background: var(--site-bg-dark);
+    padding: 40px 13px !important;
+  }
+  #block-bece32ecb68a4b86a957d6a4544ee325 {
+    padding: 83px 19px;
+  }
+  #block-ef77ab24913e41ccb017ee041c30d4e5 {
+    width: 78% !important;
+    margin: auto !important;
   }
 }
