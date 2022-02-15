@@ -1,0 +1,173 @@
+/*
+  Start: Global Config
+*/
+
+:root {
+  --card-title: #ffffff;
+  --card-hover: rgb(0 0 0 / 60%);
+  --menu-item-color: #eee;
+  --card-title-size: 35px;
+  --card-border-radius: 20px;
+}
+
+/* Increase the size of grid columns to 300px */
+.notion-collection-gallery {
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)) !important;
+}
+
+/*
+  End: Global Config
+*/
+
+/*
+  Start: Animations
+*/
+
+/* Scalling animation */
+@keyframes super-scale {
+  0% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Setup animations for the cover image and title */
+.notion-collection-card .notion-property__title,
+.notion-collection-card__cover img {
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+/*
+  End: Animations
+*/
+
+/*
+  Start: Collection View Header
+*/
+
+/* Hide the header title */
+.notion-collection__header-wrapper h3,
+.notion-dropdown__button {
+  display: none !important;
+}
+/* Remove top  border*/
+.notion-collection-gallery {
+  border: none !important;
+}
+
+/* Hide drop down menu header*/
+.notion-dropdown__menu-header {
+  display: none !important;
+}
+
+/* dropdown full width */
+.notion-dropdown {
+  width: 100% !important;
+}
+/* Dropdown Initial State */
+.notion-dropdown__menu.initial-state {
+  z-index: 1 !important;
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+/* Reset dropdown styling */
+.notion-dropdown__menu {
+  left: 0 !important;
+  position: unset !important;
+  transform: none !important;
+  box-shadow: unset !important;
+  padding: 20px 0 !important;
+}
+
+/* remove the animations*/
+.notion-dropdown__menu.animate-in.animate-out,
+.notion-dropdown__menu.animate-in,
+.notion-dropdown__menu.animate-out {
+  animation: none !important;
+}
+
+/* Dropdown option styling */
+
+.notion-dropdown__option {
+  background: var(--menu-item-color);
+  margin-right: 5px;
+  border-radius: 5px;
+}
+
+/* Switch the display of the option list items*/
+.notion-dropdown__option-list {
+  display: flex !important;
+  justify-content: center;
+  overflow-y: auto;
+}
+/* Hide the menu Item Icon*/
+.notion-dropdown__option-icon {
+  display: none !important;
+}
+
+/*
+  End: Collection View Header
+*/
+
+/*
+  Start: Collection View Card
+*/
+.notion-collection-card {
+  border-radius: var(--card-border-radius);
+  overflow: hidden;
+  cursor: pointer !important;
+  animation: super-scale 0.3s;
+
+  /* --animdur: 3s;*/
+  /*--animn: slide;*/
+}
+
+/*  collection title Animation */
+.notion-collection-card:hover .notion-property__title {
+  transform: translate(0px, 0px);
+}
+/* Cover image animation */
+.notion-collection-card:hover .notion-collection-card__cover img {
+  transform: scale(1.8);
+}
+
+/* Changing the styling of the title property */
+.notion-collection-card .notion-property__title {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--card-hover);
+  transform: translate(0px, 401px);
+  color: var(--card-title);
+  font-size: var(--card-title-size) !important;
+  padding: 25px !important;
+  text-align: left !important;
+}
+/* hide icon of page title*/
+.notion-property__title__icon-wrapper {
+  display: none !important;
+}
+
+/* show full string */
+.notion-collection-card.gallery
+  .notion-property__title
+  .notion-semantic-string {
+  white-space: normal !important;
+}
+/* Change the size of the cover image */
+.notion-collection-card__cover.medium {
+  max-height: 400px !important;
+  height: 400px !important;
+}
+
+/*
+  End: Collection View Card
+*/
