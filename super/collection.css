@@ -119,7 +119,7 @@
   Start: Collection View Card
 */
 .notion-collection-card {
-  border-radius: var(--card-border-radius);
+  border-radius: var(--card-border-radius) !important;
   overflow: hidden;
   cursor: pointer !important;
   animation: super-scale 0.3s;
