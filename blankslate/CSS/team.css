@@ -1,0 +1,37 @@
+/*
+  Start: Page Config
+*/
+
+/* Page Gray Background*/
+.super-content {
+  max-width: 100% !important;
+  /* Center Text */
+  text-align: center;
+  padding: 0px !important;
+  padding-bottom: 10vh !important;
+}
+/* Hide the header */
+.notion-header {
+  display: none !important;
+}
+
+/*
+  End: Page Config
+*/
+
+.notion-header {
+  display: none !important;
+}
+
+#block-153cc943b79a4626b9f41c9c104a066e {
+  background-color: var(--bs-orange);
+  color: var(--bs-white);
+  padding: 8em 5px;
+  text-align: start;
+  margin-bottom: 5%;
+}
+
+/* Center image */
+.notion-image {
+  margin: auto;
+}

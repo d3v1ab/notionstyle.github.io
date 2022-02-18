@@ -1,0 +1,48 @@
+/*
+  Start: Page Config
+*/
+
+/* Page Gray Background*/
+.super-content {
+  max-width: 100% !important;
+  /* Center Text */
+  text-align: center;
+  padding: 0px !important;
+  padding-bottom: 30vh !important;
+}
+/* Hide the header */
+.notion-header {
+  display: none !important;
+}
+
+/*
+  End: Page Config
+*/
+
+.notion-header {
+  display: none !important;
+}
+/* hero */
+#block-d84ef2919a2f46fdb9d4122a1708ed0d {
+  background-color: var(--bs-blue);
+  color: var(--bs-white);
+  padding: 8em 5px;
+  text-align: start;
+  margin-bottom: 5%;
+}
+
+/* What we do  */
+#block-b0a0c365a9e142ef922d3916f1c93dd1 {
+  background: var(--bs-gray) !important;
+  color: var(--bs-white) !important;
+  padding: 40px 0 !important;
+}
+/* Center image */
+.notion-image {
+  margin: auto;
+}
+
+#block-b0a0c365a9e142ef922d3916f1c93dd1 {
+  background: var(--bs-gray) !important;
+  color: var(--bs-white) !important;
+}

@@ -1,0 +1,379 @@
+/**
+    Project: Estavidita
+    Author: Yudax
+    Twitter: https://twitter.com/_yudax
+**/
+
+/*
+    START: GLOBAL CONFIG 
+*/
+
+/* Brand Colors */
+:root {
+  --es-white: #ffffff;
+  --es-black: #000000;
+  --es-gray: #efefef;
+  --es-blue: #00aeef;
+  --es-text-dark: #231f20;
+  --es-text-gray: #b3b3b3;
+}
+
+/* Brand Typography */
+:root {
+  --st-text-color: var(--es-text-dark);
+  --st-font: "Archivo";
+}
+/* Brand Typography Desktop*/
+:root {
+  --st-d-h1: 60px;
+  --st-d-h2: 40px;
+  --st-d-h3: 30px;
+  --st-d-p: 20px;
+}
+/* Brand Typography Mobile*/
+:root {
+  --st-m-h1: 40px;
+  --st-m-h2: 25px;
+  --st-m-h3: 20px;
+  --st-d-p: 25px;
+}
+/* Brand Layout */
+:root {
+  --st-max-width: 1290px;
+  --st-callout-padding-y: 47px;
+  --st-border-radius: 20px;
+}
+
+/* Website global config */
+body {
+  background: var(--es-white) !important;
+  padding: 0 !important;
+  font-family: var(--st-font) !important;
+}
+
+/* Headings */
+h1 {
+  font-size: var(--st-d-h1) !important;
+}
+h2 {
+  font-size: var(--st-d-h2) !important;
+}
+h3 {
+  font-size: var(--st-d-h3) !important;
+}
+
+/* Notion text */
+.notion-text {
+  font-size: var(--st-d-p) !important;
+}
+
+/* Page Container */
+.super-content {
+  padding: 0 !important;
+  max-width: var(--st-max-width) !important ;
+  margin: auto;
+  padding: 0 !important;
+}
+
+/* Container: Callout  */
+.notion-callout {
+  width: 100%;
+  margin: auto !important;
+  border: none !important;
+  border-radius: 0px !important;
+}
+.super-content article > .notion-callout {
+  padding-top: var(--st-callout-padding-y) !important;
+  padding-bottom: var(--st-callout-padding-y) !important;
+}
+
+.notion-callout__icon {
+  display: none !important;
+}
+.notion-callout__content {
+  width: 100% !important;
+  max-width: var(--st-max-width) !important ;
+  margin: auto !important;
+  padding: 0px calc(env(safe-area-inset-left) + 15px) !important;
+}
+.notion-callout__content .notion-text__content {
+  padding: 0px !important;
+}
+.notion-callout__content .notion-text__children {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.notion-callout .notion-callout__content > span {
+  display: none;
+}
+
+/* Scrollbar */
+body::-webkit-scrollbar {
+  width: 7px;
+}
+body::-webkit-scrollbar-track {
+  background: var(--es-gray);
+}
+body::-webkit-scrollbar-thumb {
+  background-color: var(--es-blue);
+  outline: 1px solid var(--es-gray);
+  border-radius: 20px;
+}
+
+/*
+    END: GLOBAL CONFIG 
+*/
+
+/* 
+    START: CUSTOM BLOCKS
+*/
+
+/* NavBar */
+.super-navbar {
+  background: none !important;
+  padding: 15px 0 !important;
+  height: 88px !important;
+  color: var(--es-white) !important;
+  background: var(--es-black) !important;
+  /* z-index: 9000 !important; */
+}
+.super-navbar__menu {
+  background: var(--es-black) !important;
+}
+.super-navbar__content {
+  max-width: var(--st-max-width) !important;
+  margin: auto !important;
+}
+.super-navbar__actions .notion-link {
+  padding: 0px !important;
+}
+.super-navbar__cta {
+  border-radius: var(--st-border-radius) !important;
+}
+.super-navbar svg {
+  stroke: var(--es-white) !important;
+}
+
+/* Main Button */
+.notion-text__content .notion-link {
+  background: var(--es-white);
+  padding: 7px 26px;
+  margin-top: 17px;
+  display: inline-block;
+  border-radius: var(--st-border-radius);
+  opacity: 1 !important;
+  color: var(--es-text-dark) !important;
+  border-bottom: 0px !important;
+  font-size: 20px;
+}
+.notion-callout .notion-text__content .notion-link:hover {
+  transition: 0.1s ease-in-out;
+  opacity: 0.6;
+}
+
+/* 
+    END: CUSTOM BLOCKS
+*/
+
+/* 
+    **START**
+    PAGES: HOME
+    LINK: https://www.notion.so/Estavidita-59df8c697cf941d2a1570b317b3a4ff6
+*/
+
+/* Change NavBar background */
+#page-index .super-navbar {
+  background: var(--es-blue) !important;
+}
+
+/* hide header page */
+#page-index .notion-header {
+  display: none !important;
+}
+/* Full width page size */
+#page-index .super-content {
+  max-width: 100% !important;
+}
+
+/* SECTION: Hero */
+#block-76b170871fda46c6a8e52a84e226de8c {
+  background-color: var(--es-blue);
+  color: var(--es-white);
+  padding-bottom: 0px !important;
+}
+/* Hero Column list */
+#block-e79f092ecf1f46338aa1a561ce46f4ff {
+  background: url(https://app.super.so/_next/image?url=https%3A%2F%2Fsuper-static-assets.s3.amazonaws.com%2Fc25c07f4-89f1-4476-9304-8e46e9aad9f8%2Fimages%2F8009dd6a-fbf2-40e0-90b3-d512d9a28a69.png&w=640&q=80)
+    no-repeat -66px 11px;
+  background-size: 645px;
+  min-height: 600px;
+}
+/* Hero left image */
+#block-9b32b6c749884db28b308606fe946aa6 {
+  display: none;
+}
+
+/* SECTION: About */
+#block-5cf8e184704f403c859f3d9468c64c3e .notion-image {
+  margin: auto !important;
+}
+
+/* SECTION: Values */
+#block-8c7ed6db67b644ce9d239c8bfb7420f1 {
+  background: var(--es-gray);
+  text-align: center !important;
+}
+#block-8c7ed6db67b644ce9d239c8bfb7420f1 .notion-callout {
+  background: var(--es-white);
+  border-radius: var(--st-border-radius) !important;
+}
+
+/* SECTION: CTA */
+#block-7300618b2d0f4fd8823b5e9ea96bc6ae {
+  background-color: var(--es-blue);
+  color: var(--es-white);
+  text-align: center;
+  padding: 20px !important;
+}
+#block-7300618b2d0f4fd8823b5e9ea96bc6ae .notion-link {
+  margin-top: 10px !important;
+}
+#block-a400136ac1804a76b016830cb60d4555 {
+  display: flex;
+  justify-content: center;
+  text-align: start;
+}
+#block-a400136ac1804a76b016830cb60d4555 .notion-column {
+  width: auto !important;
+}
+
+/* SECTION: SOCIAL MEDIA */
+#block-da53980df14742879e8c56ed17a41b50 {
+  color: var(--es-white);
+  text-align: center !important;
+  background-color: var(--es-black);
+}
+
+/* SECTION: GOOGLE REVIEWS */
+#block-ce4adaa0c54d4750abaf27a0bbea857a {
+  background-color: var(--es-gray) !important;
+}
+#block-ce4adaa0c54d4750abaf27a0bbea857a .notion-callout {
+  background-color: var(--es-white);
+  border-radius: var(--st-border-radius) !important;
+  min-height: 262px;
+  margin-bottom: 38px !important;
+}
+#block-ce4adaa0c54d4750abaf27a0bbea857a .notion-callout .notion-text {
+  font-size: 18px !important;
+  font-weight: bold;
+}
+
+/* SECTION: FOOTER */
+#block-100985daeaf849b18206b80fcb135a3e {
+  background: var(--es-black);
+  text-align: center;
+  color: var(--es-text-gray);
+}
+#block-100985daeaf849b18206b80fcb135a3e .notion-text {
+  font-size: 18px !important;
+}
+/* social media icons container */
+#block-a234f3aee52a464080824febfe00720b {
+  margin: auto;
+  width: 250px;
+}
+#block-a234f3aee52a464080824febfe00720b .notion-image {
+  width: 40px !important;
+  margin: auto;
+}
+#block-100985daeaf849b18206b80fcb135a3e .notion-divider {
+  border-color: #1e1e1e !important;
+}
+/* 
+    **END**
+    PAGES: HOME
+*/
+
+/* 
+    **START**
+    PAGES: ABOUT
+    LINK: https://www.notion.so/About-9c17bdf9018048228583dbbd7b51a1ad
+*/
+#page-about {
+  background-color: var(--es-gray);
+}
+
+/* Full width page size */
+#page-about .super-content {
+  max-width: 100% !important;
+}
+
+#page-about .notion-header__title-wrapper {
+  display: none !important;
+}
+/* center images */
+#page-about .notion-image {
+  margin: auto !important;
+}
+
+/* Sobri me */
+#block-d885e0e14f3d4b4aa507cbfe9d74d174 {
+  padding: var(--st-callout-padding-y);
+  background-color: var(--es-white);
+  border-radius: var(--st-border-radius) !important;
+}
+#block-67b1ae2e9f7d4f469c30734c4fd5a3aa .notion-text {
+  font-size: 18px !important;
+}
+/* Estavidita */
+#block-43608b7b1b904988a58bf212e39cc646 {
+  background-color: var(--es-white);
+  text-align: center !important;
+}
+#block-3168c401faa340b080966983a601b718 {
+  border-radius: var(--st-border-radius) !important;
+  border: 1px solid var(--es-gray) !important;
+  text-align: left !important;
+}
+
+/* 
+    **END**
+    PAGES: ABOUT
+*/
+
+#page-informe .notion-header__title-wrapper {
+  display: none !important;
+}
+
+#page-informe .super-content {
+  max-width: 100% !important;
+}
+
+.notion-embed__container > iframe {
+  background: none !important;
+}
+
+/* Start: Responsive*/
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 45px !important;
+  }
+  h2 {
+    font-size: 28px !important;
+  }
+  h3 {
+    font-size: 20px !important;
+  }
+  body {
+    text-align: center !important;
+  }
+  /* Hero Column list */
+  #block-e79f092ecf1f46338aa1a561ce46f4ff {
+    background: none !important;
+  }
+  /* Hero left image */
+  #block-9b32b6c749884db28b308606fe946aa6 {
+    display: block;
+  }
+}

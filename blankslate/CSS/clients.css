@@ -1,0 +1,41 @@
+/*
+  Start: Page Config
+*/
+
+/* Page Gray Background*/
+.super-content {
+  max-width: 100% !important;
+  /* Center Text */
+  text-align: center;
+  padding: 0px !important;
+  padding-bottom: 30vh !important;
+}
+/* Hide the header */
+.notion-header {
+  display: none !important;
+}
+/*.notion-callout__content {*/
+/*  max-width: 1000px;*/
+/*  width: 100% !important;*/
+/*  margin: auto !important;*/
+/*}*/
+
+/*
+  End: Page Config
+*/
+
+/* hero */
+#block-60fee3d88c214b1da621b48e5ef75539 {
+  background-color: var(--bs-brown);
+  color: var(--bs-white);
+  padding: 8em 5px;
+  text-align: start;
+  margin-bottom: 5%;
+}
+
+#block-c09229a118ed422eb5b81df092bfa4d1 .notion-callout {
+  background: var(--bs-gray-1);
+  border-radius: 5px !important;
+  padding: 12px 30px !important;
+  /*margin: 30px 10px !important;*/
+}

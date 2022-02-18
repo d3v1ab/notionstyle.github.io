@@ -1,0 +1,45 @@
+/*
+  Start: Page Config
+*/
+
+/* Page Gray Background*/
+.super-content {
+  max-width: 100% !important;
+  padding: 0px !important;
+  padding-bottom: 30vh !important;
+  background: var(--bs-gray-1);
+}
+/* Hide the header */
+.notion-header {
+  display: none !important;
+}
+
+/*
+  End: Page Config
+*/
+
+.notion-header {
+  display: none !important;
+}
+/* hero */
+#block-8c3add5e2f6344b483f374ac4138348f {
+  background-color: var(--bs-green);
+  color: var(--bs-white);
+  padding: 8em 5px;
+  text-align: start;
+  margin-bottom: 5%;
+}
+
+/* Description */
+#block-db9d9d7093444189a738f965fdc96230 {
+  background-color: var(--bs-brown-1);
+}
+
+/* What to expect */
+#block-cf99af3943484b1b801820585bb58fe5 {
+  background-color: var(--bs-white);
+}
+/* how to apply*/
+#block-79bf21af1b7b4b14ad9ade5b084c7d10 {
+  text-align: center;
+}

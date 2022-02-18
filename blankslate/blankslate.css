@@ -1,0 +1,920 @@
+/*
+    Full width pages: 
+*/
+
+#block-daaa9cf03d62486a9a220b20d595f86a,
+#block-team,
+#block-work,
+#block-clients,
+#block-carreers,
+#block-connect {
+  max-width: 100% !important;
+}
+
+/* Hide page header on some pages */
+
+#page-index .notion-header,
+#page-team .notion-header,
+#page-work .notion-header,
+#page-clients .notion-header,
+#page-carreers .notion-header,
+#page-connect .notion-header {
+  display: none !important;
+}
+
+#page-team .super-navbar,
+#page-work .super-navbar,
+#page-clients .super-navbar,
+#page-carreers .super-navbar,
+#page-connect .super-navbar {
+  background: var(--bs-black) !important;
+}
+
+/* 
+  Start: Global settings
+*/
+
+/* Brand Colors */
+:root {
+  --bs-black: #000000;
+  --bs-white: #ffffff;
+  --bs-text-light: var(--bs-black);
+  --bs-text-dark: var(--bs-white);
+  --bs-text-gray: #a9a9a9;
+  --bs-brown: #a56248;
+  --bs-brown-1: #e2d9d0;
+  --bs-orange: #bb7a32;
+  --bs-gray: #97a2a7;
+  --bs-gray-1: #f0f0f0;
+  --bs-gray-2: #d3d3d3;
+  --bs-gray-3: #3a3a3a;
+  --bs-green: #546c5e;
+  --bs-green-1: #7e9392;
+  --bs-green-2: #b4b7ac;
+  --bs-blue: #024959;
+  --bs-blue-1: #182a3d;
+}
+.color-orange {
+  color: var(--bs-orange) !important;
+}
+.color-brown {
+  color: var(--bs-brown) !important;
+}
+
+/* Typography */
+body {
+  font-family: "DM Sans", sans-serif !important;
+}
+h1 {
+  font-size: 74px !important;
+}
+h2 {
+  font-size: 40px !important;
+}
+h3 {
+  font-size: 24px !important;
+}
+
+/* Page Container */
+.super-content {
+  padding: 0 !important;
+}
+.super-content article {
+  max-width: 1300px !important;
+  margin: auto;
+  padding: 0 !important;
+}
+
+/* Page Cover */
+
+.notion-header__cover {
+  max-height: 100vh !important;
+  height: calc(100vh) !important;
+  overflow: hidden;
+  position: relative;
+  top: -89px;
+  z-index: -10;
+}
+
+.notion-header__cover::after,
+.notion-header__cover::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgb(0 0 0 / 58%);
+}
+
+.notion-header__icon-wrapper {
+  width: 100%;
+}
+.notion-header__content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  bottom: 50%;
+  width: 100%;
+  text-align: center;
+  color: var(--bs-text-dark) !important;
+  animation: fadeIn 1.5s;
+  /* max-height: 255px; */
+  /* background: red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1100px !important;
+  overflow: hidden;
+  padding: 0px !important;
+}
+.notion-header__content h1 {
+  line-height: 81px !important;
+  word-break: break-word !important;
+}
+
+/* Scrollbar */
+body::-webkit-scrollbar {
+  width: 7px;
+}
+body::-webkit-scrollbar-track {
+  background: var(--bs-gray);
+}
+body::-webkit-scrollbar-thumb {
+  background-color: var(--bs-orange);
+  outline: 1px solid var(--bs-gray);
+  border-radius: 20px;
+}
+/* 
+  End: Global settings
+*/
+
+/* 
+  Start: Responsivness
+*/
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 35px !important;
+  }
+  h2 {
+    font-size: 30px !important;
+  }
+  h3 {
+    font-size: 18px !important;
+  }
+  body {
+    text-align: center;
+  }
+}
+
+/* 
+  End: Responsivness
+*/
+
+/* 
+  Start: NavBar
+*/
+
+.super-navbar {
+  background: none !important;
+  padding: 15px 0 !important;
+  height: 88px !important;
+  color: white !important;
+  z-index: 9000 !important;
+}
+.super-navbar__menu {
+  background: var(--bs-black) !important;
+}
+.super-navbar__content {
+  max-width: 1300px !important;
+  margin: auto !important;
+}
+.super-navbar__actions .notion-link {
+  padding: 0px !important;
+}
+.super-navbar__cta {
+  border-radius: 5px !important;
+}
+.super-navbar svg {
+  stroke: var(--bs-white) !important;
+}
+#page-index .super-navbar {
+  position: relative !important;
+}
+
+/* Collection View  */
+/*
+  Start: Global Config
+*/
+
+:root {
+  --card-title: #ffffff;
+  --card-hover: #183f6c94;
+  --menu-item-color: #eee;
+  --card-title-size: 30px;
+  --card-border-radius: 10px;
+  --gallery-size: 330px;
+}
+
+/* Increase the size of grid columns to 300px */
+.notion-collection-gallery {
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(var(--gallery-size), 1fr)
+  ) !important;
+}
+
+/*
+  End: Global Config
+*/
+
+/*
+  Start: Animations
+*/
+
+/* Scalling animation */
+@keyframes super-scale {
+  0% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Setup animations for the cover image and title */
+.notion-collection-card .notion-property__title,
+.notion-collection-card__cover img {
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+/*
+  End: Animations
+*/
+
+/*
+  Start: Collection View Header
+*/
+
+/* Hide the header title */
+.notion-collection__header-wrapper h3,
+.notion-dropdown__button {
+  display: none !important;
+}
+/* Remove top  border*/
+.notion-collection-gallery {
+  border: none !important;
+}
+
+/* Hide drop down menu header*/
+.notion-dropdown__menu-header {
+  display: none !important;
+}
+
+/* text */
+.notion-dropdown__option p {
+  padding: 10px !important;
+  font-size: 18px !important;
+}
+
+/* dropdown full width */
+.notion-dropdown {
+  width: 100% !important;
+  margin-bottom: 15px !important;
+}
+/* Dropdown Initial State */
+.notion-dropdown__menu.initial-state {
+  z-index: 1 !important;
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+/* Reset dropdown styling */
+.notion-dropdown__menu {
+  left: 0 !important;
+  position: unset !important;
+  transform: none !important;
+  box-shadow: unset !important;
+  padding: 20px 0 !important;
+}
+
+/* remove the animations*/
+.notion-dropdown__menu.animate-in.animate-out,
+.notion-dropdown__menu.animate-in,
+.notion-dropdown__menu.animate-out {
+  animation: none !important;
+}
+
+/* Dropdown option styling */
+
+.notion-dropdown__option {
+  background: var(--bs-gray-1);
+  margin-right: 5px;
+  border-radius: 5px;
+  transition: 0.2s ease-in-out;
+}
+.notion-dropdown__option:hover,
+.active-filter {
+  background: var(--bs-blue-1) !important;
+  color: var(--bs-white);
+}
+
+/* Switch the display of the option list items*/
+.notion-dropdown__option-list {
+  display: flex !important;
+  justify-content: center;
+  overflow-y: auto;
+}
+/* Hide the menu Item Icon*/
+.notion-dropdown__option-icon {
+  display: none !important;
+}
+
+/*
+  End: Collection View Header
+*/
+
+/*
+  Start: Collection View Card
+*/
+.notion-collection-card {
+  border-radius: var(--card-border-radius) !important;
+  overflow: hidden;
+  cursor: pointer !important;
+  animation: super-scale 0.3s;
+  box-shadow: none !important;
+
+  /* --animdur: 3s;*/
+  /*--animn: slide;*/
+}
+
+/*  collection title Animation */
+.notion-collection-card:hover .notion-property__title {
+  transform: translate(0px, 0px);
+  animation: fadeIn 1.2s;
+}
+/* Cover image animation */
+.notion-collection-card:hover .notion-collection-card__cover img {
+  transform: scale(1.4);
+}
+
+/* Changing the styling of the title property */
+.notion-collection-card .notion-property__title {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #183f6cc2;
+  align-items: center !important;
+  text-align: center !important;
+  transform: translate(0px, 401px);
+  color: var(--card-title);
+  font-size: var(--card-title-size) !important;
+  padding: 76px !important;
+  font-size: 26px !important;
+}
+.notion-collection-card .notion-property__title .notion-semantic-string {
+  animation: fadeInUp 0.7s;
+
+  white-space: normal !important;
+}
+/* hide icon of page title*/
+.notion-property__title__icon-wrapper {
+  display: none !important;
+}
+
+/* show full string */
+.notion-collection-card.gallery
+  .notion-property__title
+  .notion-semantic-string {
+  white-space: normal !important;
+}
+/* Change the size of the cover image */
+.notion-collection-card__cover.medium {
+  max-height: 400px !important;
+  height: 400px !important;
+}
+
+/*
+  End: Collection View Card
+*/
+
+/* 
+  End: NavBar
+*/
+
+/* 
+  Start: Content Container
+*/
+.notion-callout {
+  width: 100%;
+  margin: auto !important;
+  border: none !important;
+  border-radius: 0px !important;
+  padding-top: 4% !important;
+  padding-bottom: 4% !important;
+  /* padding: 50px 20px; */
+}
+.notion-callout__icon {
+  display: none !important;
+}
+/* The callout content*/
+
+.notion-callout__content {
+  max-width: 1300px;
+  width: 100% !important;
+  margin: auto !important;
+
+  /* padding: 4.2% 0px !important; */
+  /* padding-top: 4.2% !important; */
+  padding-left: calc(env(safe-area-inset-left) + 15px) !important;
+  padding-right: calc(env(safe-area-inset-right) + 15px) !important;
+}
+.notion-callout__content .notion-text__children {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.notion-callout .notion-callout__content > span {
+  display: none;
+}
+
+/* 
+  End: Content Container
+*/
+
+/* 
+  Start: CustomBlocks Design
+*/
+
+.super-content .notion-text__content .notion-link:nth-child(1) {
+  background: var(--bs-black) !important;
+  color: var(--bs-white) !important;
+  padding: 7px;
+  border-radius: 5px !important;
+  display: inline-block;
+  opacity: 1;
+  min-width: 156px;
+}
+.super-content .notion-text__content .notion-link:hover {
+  /* opacity: 0.8; */
+  transform: scale(1.03);
+  transition: 0.3s ease-in-out;
+}
+
+/* Footer */
+#block-2c7f4dee8c654af1915f14d5ce9e6b74 {
+  padding-bottom: 5vh !important;
+
+  color: var(--bs-gray) !important;
+  text-align: center;
+}
+#block-2c7f4dee8c654af1915f14d5ce9e6b74 .notion-link {
+  background: none !important;
+  padding: 0 !important;
+  border-bottom: 0 !important;
+  text-decoration: none !important;
+  min-width: 1px !important;
+}
+#block-f068fb4ab55644f9926a8f941e5f678a {
+  border-top: 0.6px solid #9b9a97 !important;
+  padding-top: 15px !important;
+}
+/* Footer Full */
+#block-31501e2b852f41588e190294edbca4d2 {
+  background: var(--bs-black) !important;
+  color: var(--bs-gray-2) !important;
+  text-align: start !important;
+}
+
+/* 
+  End: CustomBlocks Design
+*/
+
+/* 
+  Start: Animations
+*/
+
+.n-fadeUp {
+  -webkit-animation: fadeInUp 1s !important;
+  -moz-animation: fadeInUp 1s !important;
+  -ms-animation: fadeInUp 1s !important;
+  -o-animation: fadeInUp 1s !important;
+  animation: fadeInUp 1s !important;
+}
+.zoom-in-left {
+  -webkit-animation: zoomInLeft 1s !important;
+  -moz-animation: zoomInLeft 1s !important;
+  -ms-animation: zoomInLeft 1s !important;
+  -o-animation: zoomInLeft 1s !important;
+  animation: zoomInLeft 1s !important;
+}
+/* 
+  End: Animations
+*/
+
+/* Disable loading spinner */
+video::-webkit-media-controls {
+  visibility: hidden;
+}
+
+video::-webkit-media-controls-enclosure {
+  visibility: visible;
+}
+
+/*
+****************************************************************************
+****************************************************************************
+    
+        START: Home Page 
+
+**************************************************************************** 
+****************************************************************************    
+*/
+
+/*
+  Start: Page Config
+*/
+
+/* Responsivnes */
+
+/* Page toggle button */
+#block-347ca87cdc5a4d9e97abd22d1a185544 {
+  display: none;
+}
+
+/*
+  End: Page Config
+*/
+
+/* 
+  Start: Custom Blocks  
+*/
+
+/* Background Video */
+#block-236a8941168f425692c7ac1467ddc1e1 {
+  background: var(--bs-black);
+  position: absolute;
+  height: calc(100vh - 88px);
+  top: 0;
+  right: 0;
+  color: var(--bs-white);
+  padding: 0 !important;
+}
+#block-236a8941168f425692c7ac1467ddc1e1 .notion-callout__content {
+  max-width: 100% !important;
+  height: 100% !important;
+  padding: 0 !important;
+}
+#block-236a8941168f425692c7ac1467ddc1e1 .notion-video {
+  margin-top: 0 !important;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+#block-236a8941168f425692c7ac1467ddc1e1 .notion-video .notion-video__content {
+  width: 100%;
+  height: 100%;
+}
+#block-236a8941168f425692c7ac1467ddc1e1 video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+/* black overlay to make the content text visible */
+#block-236a8941168f425692c7ac1467ddc1e1:before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgb(0 0 0 / 58%);
+}
+
+/* Hero Section */
+#block-d09a460f7f3b43deb556a7cae15a3a69 {
+  height: calc(100vh - 188px);
+  z-index: 999;
+  text-align: left;
+  overflow: hidden;
+  /* animation: fadeInUp 1.5s; */
+  /* padding: 0px 10px !important; */
+  padding-left: 0px !important;
+  color: var(--bs-white) !important;
+}
+
+#block-d09a460f7f3b43deb556a7cae15a3a69 h1 {
+  margin-top: 0;
+  /* font-size: 75px !important; */
+  color: var(--bs-white) !important;
+}
+
+#block-d09a460f7f3b43deb556a7cae15a3a69 .highlighted-color {
+  display: inline-block;
+  text-decoration: underline;
+}
+
+/* ABOUT US  */
+#block-5e6890f8041942948cdcaad42ce6c171 {
+  background: var(--bs-gray-2);
+  text-align: center;
+  padding-top: 8% !important;
+}
+#block-5e6890f8041942948cdcaad42ce6c171 a {
+  background: white;
+  border: none;
+  text-decoration: none !important;
+  padding: 10px;
+  display: inline-block;
+  margin-top: 15px;
+  color: var(--bs-black);
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+/* Home Footer */
+#block-daaa9cf03d62486a9a220b20d595f86a
+  #block-2c7f4dee8c654af1915f14d5ce9e6b74 {
+  background-color: var(--bs-gray-2);
+}
+
+/* 
+  End: Custom Blocks  
+*/
+
+/*
+****************************************************************************
+****************************************************************************
+    
+        END: Home Page 
+
+**************************************************************************** 
+****************************************************************************    
+*/
+
+/* Pages hero animations */
+#block-153cc943b79a4626b9f41c9c104a066e,
+#block-d84ef2919a2f46fdb9d4122a1708ed0d,
+#block-60fee3d88c214b1da621b48e5ef75539,
+#block-8c3add5e2f6344b483f374ac4138348f,
+#block-de91c04bd8694d26966d15d1e1d4375a {
+  /* padding: 8em 5px; */
+  color: var(--bs-white);
+  text-align: start;
+  margin-bottom: 5%;
+  height: 400px !important;
+}
+#block-153cc943b79a4626b9f41c9c104a066e h2,
+#block-d84ef2919a2f46fdb9d4122a1708ed0d h2,
+#block-60fee3d88c214b1da621b48e5ef75539 h2,
+#block-8c3add5e2f6344b483f374ac4138348f h2,
+#block-de91c04bd8694d26966d15d1e1d4375a h2 {
+  animation: fadeInUp 0.9s;
+}
+
+/*
+****************************************************************************
+****************************************************************************
+    
+        START: Team Page 
+
+**************************************************************************** 
+****************************************************************************    
+*/
+#block-team {
+  text-align: center !important;
+}
+
+#block-6c4a82fc72c7499691cf5dc4c2cee746 .notion-column .notion-text {
+  padding: 0px 22px !important;
+}
+#block-6c4a82fc72c7499691cf5dc4c2cee746 {
+  text-align: justify !important;
+  text-align-last: center !important;
+}
+
+#block-team #block-153cc943b79a4626b9f41c9c104a066e {
+  background-color: var(--bs-orange);
+}
+
+/* Center image */
+#block-team .notion-image {
+  margin: auto;
+}
+
+/*
+****************************************************************************
+****************************************************************************
+    
+        END: Team Page 
+
+**************************************************************************** 
+****************************************************************************    
+*/
+
+/*
+****************************************************************************
+****************************************************************************
+    
+        START: Work Page 
+
+**************************************************************************** 
+****************************************************************************    
+*/
+
+/* hero */
+#block-d84ef2919a2f46fdb9d4122a1708ed0d {
+  background-color: var(--bs-blue-1);
+  text-align: left !important;
+}
+
+/* What we do  */
+#block-b0a0c365a9e142ef922d3916f1c93dd1 {
+  background: var(--bs-gray) !important;
+  color: var(--bs-white) !important;
+  padding: 40px 0 !important;
+  text-align: center !important;
+}
+#block-b0a0c365a9e142ef922d3916f1c93dd1 img {
+  margin: auto;
+}
+.notion-column * {
+  animation: fadeInUp 1.3s;
+}
+.notion-column:nth-child(2) {
+  animation-delay: 0.5s;
+}
+.notion-column:nth-child(3) {
+  animation-delay: 1s;
+}
+.notion-column:nth-child(4) {
+  animation-delay: 1.5s;
+}
+.notion-column:nth-child(5) {
+  animation-delay: 2s;
+}
+.notion-column:nth-child(6) {
+  animation-delay: 2.5s;
+}
+.notion-column:nth-child(7) {
+  animation-delay: 3s;
+}
+.notion-column:nth-child(8) {
+  animation-delay: 3.5s;
+}
+.notion-column:nth-child(9) {
+  animation-delay: 4s;
+}
+.notion-column:nth-child(10) {
+  animation-delay: 4.5s;
+}
+.notion-column:nth-child(11) {
+  animation-delay: 5s;
+}
+.notion-column:nth-child(12) {
+  animation-delay: 5.5s;
+}
+.notion-column:hover {
+  /* transform: translate(0px, -10px); */
+  /* transition: 0.3s ease-in-out; */
+}
+/* Center image */
+#block-work .notion-image {
+  display: inline-block !important;
+  margin: auto !important;
+}
+
+#block-b0a0c365a9e142ef922d3916f1c93dd1 {
+  background: var(--bs-gray) !important;
+  color: var(--bs-white) !important;
+}
+/* CTA */
+#block-d1bd6379eb5947eeb26860d7f8897bb7 {
+  padding-top: 0px !important;
+  text-align: center !important;
+}
+/*
+****************************************************************************
+****************************************************************************
+    
+        END: Work Page 
+
+**************************************************************************** 
+****************************************************************************    
+*/
+
+/*
+****************************************************************************
+****************************************************************************
+    
+        START: Clients Page 
+
+**************************************************************************** 
+****************************************************************************    
+*/
+/* hero */
+#block-60fee3d88c214b1da621b48e5ef75539 {
+  background-color: var(--bs-brown);
+}
+#block-9218b52bb4134a20b334178d389ca6b9 {
+  opacity: 0.45 !important;
+}
+#block-clients {
+  text-align: center !important;
+}
+#block-c09229a118ed422eb5b81df092bfa4d1 .notion-callout {
+  background: var(--bs-gray-1);
+  border-radius: 10px !important;
+  margin-bottom: 17px !important;
+  text-align: start !important;
+  font-size: 13px !important;
+  font-weight: bold;
+  /* padding: 12px 30px !important; */
+  /*margin: 30px 10px !important;*/
+}
+#block-165ff070315d49ecb64a939bfa337e9a {
+  padding-top: 0 !important;
+}
+
+/*
+****************************************************************************
+****************************************************************************
+    
+        END: Clients Page 
+
+**************************************************************************** 
+****************************************************************************    
+*/
+
+/*
+****************************************************************************
+****************************************************************************
+    
+        START: Careers Page 
+
+**************************************************************************** 
+****************************************************************************    
+*/
+
+/* hero */
+#page-carreers {
+  background-color: var(--bs-gray-1) !important;
+}
+
+#block-8c3add5e2f6344b483f374ac4138348f {
+  background-color: var(--bs-gray-3);
+}
+
+/* Description */
+#block-db9d9d7093444189a738f965fdc96230 {
+  background-color: var(--bs-brown-1);
+}
+#block-db9d9d7093444189a738f965fdc96230 .notion-image {
+  margin: auto !important;
+}
+/* What to expect */
+#block-cf99af3943484b1b801820585bb58fe5 {
+  background-color: var(--bs-white);
+}
+/* how to apply*/
+#block-79bf21af1b7b4b14ad9ade5b084c7d10 {
+  text-align: center;
+}
+
+/*
+****************************************************************************
+****************************************************************************
+    
+        End: Careers Page 
+
+**************************************************************************** 
+****************************************************************************    
+*/
+
+/*
+****************************************************************************
+****************************************************************************
+    
+        Start: Connect Page 
+
+**************************************************************************** 
+****************************************************************************    
+*/
+/* hero */
+#block-de91c04bd8694d26966d15d1e1d4375a {
+  background-color: var(--bs-gray);
+}
+
+/*
+****************************************************************************
+****************************************************************************
+    
+        End: Connect Page 
+
+**************************************************************************** 
+****************************************************************************    
+*/
