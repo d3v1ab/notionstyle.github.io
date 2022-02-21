@@ -13,6 +13,7 @@
   --es-white: #ffffff;
   --es-black: #000000;
   --es-gray: #efefef;
+  --es-gray-2: #d2d3d4;
   --es-blue: #00aeef;
   --es-text-dark: #231f20;
   --es-text-gray: #b3b3b3;
@@ -27,15 +28,17 @@
 :root {
   --st-d-h1: 60px;
   --st-d-h2: 40px;
-  --st-d-h3: 30px;
+  --st-d-h3: 25px;
   --st-d-p: 20px;
+  --st-d-text-sm: 15px;
 }
+
 /* Brand Typography Mobile*/
 :root {
   --st-m-h1: 40px;
   --st-m-h2: 25px;
   --st-m-h3: 20px;
-  --st-d-p: 25px;
+  --st-m-p: 25px;
 }
 /* Brand Layout */
 :root {
@@ -49,6 +52,17 @@ body {
   background: var(--es-white) !important;
   padding: 0 !important;
   font-family: var(--st-font) !important;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Archivo Narrow", sans-serif !important;
+}
+
+/* Hide pages */
+#block-07d1f1046f5d4dfd8faee1918421fb8a {
+  display: none !important;
 }
 
 /* Headings */
@@ -144,6 +158,9 @@ body::-webkit-scrollbar-thumb {
   max-width: var(--st-max-width) !important;
   margin: auto !important;
 }
+.super-navbar__item {
+  font-weight: bold !important;
+}
 .super-navbar__actions .notion-link {
   padding: 0px !important;
 }
@@ -196,99 +213,121 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* SECTION: Hero */
-#block-76b170871fda46c6a8e52a84e226de8c {
+#block-61afdd2793184d8ba5406a975dd8eedc {
   background-color: var(--es-blue);
   color: var(--es-white);
   padding-bottom: 0px !important;
 }
 /* Hero Column list */
-#block-e79f092ecf1f46338aa1a561ce46f4ff {
+#block-001e92728079403783e001a7b38ed6f6 {
   background: url(https://app.super.so/_next/image?url=https%3A%2F%2Fsuper-static-assets.s3.amazonaws.com%2Fc25c07f4-89f1-4476-9304-8e46e9aad9f8%2Fimages%2F8009dd6a-fbf2-40e0-90b3-d512d9a28a69.png&w=640&q=80)
-    no-repeat -66px 11px;
-  background-size: 645px;
-  min-height: 600px;
+    no-repeat -36px -29px;
+  background-size: 751px;
+  min-height: 606px;
 }
 /* Hero left image */
-#block-9b32b6c749884db28b308606fe946aa6 {
+#block-def377ed696a489a8c31fc7d969c20bc {
   display: none;
 }
 
+.notion-column {
+  justify-content: center;
+}
+/*  hero text right  */
+#block-862a3794d4494d35b24141dc7593f2ef {
+  justify-content: center;
+}
 /* SECTION: About */
-#block-5cf8e184704f403c859f3d9468c64c3e .notion-image {
+#block-aea480b78aca46ad924ec325a72ee5a4 .notion-image {
   margin: auto !important;
 }
 
 /* SECTION: Values */
-#block-8c7ed6db67b644ce9d239c8bfb7420f1 {
+#block-2a9a739b18204a54b214b4a53f2a0b09 {
   background: var(--es-gray);
   text-align: center !important;
 }
-#block-8c7ed6db67b644ce9d239c8bfb7420f1 .notion-callout {
+#block-2a9a739b18204a54b214b4a53f2a0b09 .notion-callout {
   background: var(--es-white);
   border-radius: var(--st-border-radius) !important;
+  min-height: 368px !important;
 }
 
 /* SECTION: CTA */
-#block-7300618b2d0f4fd8823b5e9ea96bc6ae {
+#block-0cdbec691fcb4236b665d72bbd6c3249 {
   background-color: var(--es-blue);
   color: var(--es-white);
   text-align: center;
   padding: 20px !important;
 }
-#block-7300618b2d0f4fd8823b5e9ea96bc6ae .notion-link {
+#block-0cdbec691fcb4236b665d72bbd6c3249 .notion-link {
   margin-top: 10px !important;
 }
-#block-a400136ac1804a76b016830cb60d4555 {
+#block-0f74191f8cf140f4bbe9d9a180d87d63 {
   display: flex;
   justify-content: center;
   text-align: start;
 }
-#block-a400136ac1804a76b016830cb60d4555 .notion-column {
+#block-0f74191f8cf140f4bbe9d9a180d87d63 .notion-column {
   width: auto !important;
 }
 
 /* SECTION: SOCIAL MEDIA */
-#block-da53980df14742879e8c56ed17a41b50 {
+#block-5cd62f7eecee4805967c4aea9f520212 {
   color: var(--es-white);
   text-align: center !important;
   background-color: var(--es-black);
 }
 
 /* SECTION: GOOGLE REVIEWS */
-#block-ce4adaa0c54d4750abaf27a0bbea857a {
-  background-color: var(--es-gray) !important;
+#block-109355121a5049cda55c6d41592bb0a5 {
+  background-color: var(--es-gray-2) !important;
 }
-#block-ce4adaa0c54d4750abaf27a0bbea857a .notion-callout {
+#block-109355121a5049cda55c6d41592bb0a5 .notion-callout {
   background-color: var(--es-white);
   border-radius: var(--st-border-radius) !important;
   min-height: 262px;
   margin-bottom: 38px !important;
 }
-#block-ce4adaa0c54d4750abaf27a0bbea857a .notion-callout .notion-text {
-  font-size: 18px !important;
+#block-109355121a5049cda55c6d41592bb0a5 .notion-callout .notion-text {
+  font-size: var(--st-d-text-sm) !important;
   font-weight: bold;
 }
 
+#block-dedc45ff253e4f68806e6ab152369e8c {
+  justify-content: center;
+}
+
 /* SECTION: FOOTER */
-#block-100985daeaf849b18206b80fcb135a3e {
+#block-d49f1994b44a4d89b6f1958b378b8249 {
   background: var(--es-black);
   text-align: center;
   color: var(--es-text-gray);
 }
-#block-100985daeaf849b18206b80fcb135a3e .notion-text {
-  font-size: 18px !important;
+#block-d49f1994b44a4d89b6f1958b378b8249 .notion-text {
+  font-size: var(--st-d-text-sm) !important;
 }
 /* social media icons container */
-#block-a234f3aee52a464080824febfe00720b {
+#block-60ec840f70874318b1ccf3fd9ebefba8 {
   margin: auto;
-  width: 250px;
+  width: 163px !important;
+  overflow: hidden;
+  /* background: red; */
+  /* flex-direction: row; */
+  flex-wrap: nowrap !important;
 }
-#block-a234f3aee52a464080824febfe00720b .notion-image {
+#block-60ec840f70874318b1ccf3fd9ebefba8 .notion-image {
   width: 40px !important;
   margin: auto;
 }
-#block-100985daeaf849b18206b80fcb135a3e .notion-divider {
+#block-d49f1994b44a4d89b6f1958b378b8249 .notion-divider {
   border-color: #1e1e1e !important;
+}
+
+#block-c550f84ff0b84a268726413ecae16fb9 .notion-link {
+  background: none !important;
+  padding: 0 !important;
+  font-size: inherit !important;
 }
 /* 
     **END**
@@ -318,22 +357,22 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* Sobri me */
-#block-d885e0e14f3d4b4aa507cbfe9d74d174 {
+#block-1f5ae12a52e845dbbd2873fbf4f787d6 {
   padding: var(--st-callout-padding-y);
   background-color: var(--es-white);
   border-radius: var(--st-border-radius) !important;
 }
 #block-67b1ae2e9f7d4f469c30734c4fd5a3aa .notion-text {
-  font-size: 18px !important;
+  font-size: var(--st-d-text-sm) !important;
 }
 /* Estavidita */
-#block-43608b7b1b904988a58bf212e39cc646 {
+#block-9c1b79e012a44d73acfa7b5b6ac2389a {
   background-color: var(--es-white);
   text-align: center !important;
 }
-#block-3168c401faa340b080966983a601b718 {
+#block-e3843daaebe441d9ab9bb08c53d2a66c {
   border-radius: var(--st-border-radius) !important;
-  border: 1px solid var(--es-gray) !important;
+  border: 3px solid var(--es-gray) !important;
   text-align: left !important;
 }
 
@@ -369,11 +408,12 @@ body::-webkit-scrollbar-thumb {
     text-align: center !important;
   }
   /* Hero Column list */
-  #block-e79f092ecf1f46338aa1a561ce46f4ff {
+  #block-001e92728079403783e001a7b38ed6f6 {
     background: none !important;
   }
   /* Hero left image */
-  #block-9b32b6c749884db28b308606fe946aa6 {
+  #block-def377ed696a489a8c31fc7d969c20bc {
     display: block;
+    margin: auto !important;
   }
 }
