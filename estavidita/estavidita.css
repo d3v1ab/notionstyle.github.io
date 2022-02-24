@@ -339,20 +339,20 @@ body::-webkit-scrollbar-thumb {
     PAGES: ABOUT
     LINK: https://www.notion.so/About-9c17bdf9018048228583dbbd7b51a1ad
 */
-#page-about {
+#page-sobremi {
   background-color: var(--es-gray);
 }
 
 /* Full width page size */
-#page-about .super-content {
+#page-sobremi .super-content {
   max-width: 100% !important;
 }
 
-#page-about .notion-header__title-wrapper {
+#page-sobremi .notion-header__title-wrapper {
   display: none !important;
 }
 /* center images */
-#page-about .notion-image {
+#page-sobremi .notion-image {
   margin: auto !important;
 }
 
