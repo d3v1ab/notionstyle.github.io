@@ -1,0 +1,213 @@
+/* Brand Colors */
+:root {
+  --es-white: #ffffff;
+  --es-black: #000000;
+  --es-gray: #f8f8f8;
+  --es-gray-2: #b8b8b8;
+  --es-blue: #04395e;
+}
+
+/* Brand Typography */
+:root {
+  --st-text-color: var(--es-text-dark);
+  --st-font: "DM Sans";
+  --st-heading-font: "IBM Plex Sans";
+}
+/* Brand Typography Desktop*/
+:root {
+  --st-d-h1: 40px;
+  --st-d-h2: 36px;
+  --st-d-h3: 22px;
+  --st-d-p: 18px;
+  --st-d-text-sm: 15px;
+}
+
+/* Brand Typography Mobile*/
+:root {
+  --st-m-h1: 40px;
+  --st-m-h2: 25px;
+  --st-m-h3: 20px;
+  --st-m-p: 25px;
+}
+/* Brand Layout */
+:root {
+  --st-max-width: 1100px;
+  --st-callout-padding-y: 47px;
+  --st-border-radius: 20px;
+}
+
+/* Notion Colors overwrite */
+:root {
+  --color-bg-gray-light: var(--es-gray);
+  --color-text-blue: var(--es-blue);
+  --color-text-default: var(--es-black);
+  --color-text-gray: var(--es-gray-2);
+  --color-bg-blue-light: var(--es-blue);
+}
+
+/* Website global config */
+body {
+  background: var(--es-white) !important;
+  padding: 0 !important;
+  font-family: var(--st-font) !important;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--st-heading-font), sans-serif !important;
+}
+
+/* Hide pages */
+#block-07d1f1046f5d4dfd8faee1918421fb8a {
+  display: none !important;
+}
+
+/* Headings */
+h1 {
+  font-size: var(--st-d-h1) !important;
+}
+h2 {
+  font-size: var(--st-d-h2) !important;
+}
+h3 {
+  font-size: var(--st-d-h3) !important;
+}
+
+/* Notion text */
+.notion-text {
+  font-size: var(--st-d-p) !important;
+}
+
+/* Page Container */
+.super-content {
+  padding: 0 !important;
+  max-width: var(--st-max-width) !important ;
+  margin: auto;
+  padding: 0 !important;
+}
+
+/* Container: Callout  */
+.notion-callout {
+  width: 100%;
+  margin: auto !important;
+  border: none !important;
+  border-radius: 0px !important;
+}
+.super-content article > .notion-callout {
+  padding-top: var(--st-callout-padding-y) !important;
+  padding-bottom: var(--st-callout-padding-y) !important;
+}
+
+.notion-callout__icon {
+  display: none !important;
+}
+.notion-callout__content {
+  width: 100% !important;
+  max-width: var(--st-max-width) !important ;
+  margin: auto !important;
+  padding: 0px calc(env(safe-area-inset-left) + 15px) !important;
+}
+.notion-callout__content .notion-text__content {
+  padding: 0px !important;
+}
+.notion-callout__content .notion-text__children {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.notion-callout .notion-callout__content > span {
+  display: none;
+}
+
+/* Scrollbar */
+body::-webkit-scrollbar {
+  width: 7px;
+}
+body::-webkit-scrollbar-track {
+  background: var(--es-gray);
+}
+body::-webkit-scrollbar-thumb {
+  background-color: var(--es-blue);
+  outline: 1px solid var(--es-gray);
+  border-radius: 20px;
+}
+
+/*
+    END: GLOBAL CONFIG 
+*/
+
+/* 
+    START: CUSTOM BLOCKS
+*/
+
+/* NavBar */
+.super-navbar {
+  background: none !important;
+  padding: 15px 0 !important;
+  height: 88px !important;
+  color: var(--es-gray-2) !important;
+  background: var(--es-gray) !important;
+  /* z-index: 9000 !important; */
+  opacity: 1 !important;
+}
+.super-navbar__menu {
+  background: var(--es-black) !important;
+}
+.super-navbar__content {
+  max-width: var(--st-max-width) !important;
+  margin: auto !important;
+}
+.super-navbar__item {
+  font-weight: bold !important;
+}
+.super-navbar__actions .notion-link {
+  padding: 0px !important;
+}
+.super-navbar__cta {
+  border-radius: var(--st-border-radius) !important;
+}
+.super-navbar svg {
+  stroke: var(--es-white) !important;
+}
+
+/* Main Button */
+.notion-text__content .notion-link {
+  background: var(--es-white);
+  padding: 7px 26px;
+  margin-top: 17px;
+  display: inline-block;
+  border-radius: var(--st-border-radius);
+  opacity: 1 !important;
+  color: var(--es-text-dark) !important;
+  border-bottom: 0px !important;
+  font-size: 20px;
+}
+.notion-callout .notion-text__content .notion-link:hover {
+  transition: 0.1s ease-in-out;
+  opacity: 0.6;
+}
+
+/* 
+    END: CUSTOM BLOCKS
+*/
+
+/*
+  Page: Index
+
+*/
+
+/* Full width page size */
+#page-index .super-content {
+  max-width: 100% !important;
+}
+.notion-column {
+  justify-content: center;
+}
+.bg-blue-light {
+  color: var(--es-white) !important;
+}
+
+/* hide header page */
+#page-index .notion-header {
+  display: none !important;
+}
