@@ -181,6 +181,16 @@ h3 {
   margin: auto;
   margin-top: 10%;
 }
+#block-ab73b0987f56405fa50502c37dc9ee33 .notion-link {
+  border: none !important;
+  padding: 0;
+  margin-top: 0;
+  display: inline-block;
+  border-radius: none;
+  text-size-adjust: 18pt;
+  font-size: 13pt;
+  opacity: 1;
+}
 #block-f2d447b68ce947b1afb2da4e6b3fbc60 {
   width: 301px;
   margin: auto;
