@@ -34,7 +34,7 @@
 /* Brand Layout */
 :root {
   --st-max-width: 1040px;
-  --st-callout-padding-y: 47px;
+  --st-callout-padding-y: 55px;
   --st-border-radius: 15px;
 }
 
@@ -119,6 +119,7 @@ h3 {
 .notion-callout {
   width: 100%;
   margin-top: 0 !important;
+  margin-bottom: 0 !important;
   /* margin: auto !important; */
   border: none !important;
   border-radius: 0px !important;
@@ -252,6 +253,7 @@ body::-webkit-scrollbar-thumb {
 }
 #block-d804111d64f943a89e31920dd0591be2 .notion-column {
   width: 40px !important;
+  margin-right: 5px;
 }
 /* 
     END: CUSTOM BLOCKS
@@ -269,7 +271,7 @@ body::-webkit-scrollbar-thumb {
   margin: auto !important;
 }
 
-.notion-callout .notion-callout {
+#page-index .notion-callout .notion-callout {
   text-align: center;
 }
 
@@ -307,4 +309,27 @@ block-5abc683c2f114a9b8ed5fb9cc7e6a5b1 {
 
 /*
   End: Page Index
+*/
+
+/*
+  Start: Page: About
+*/
+#page-about .notion-header {
+  display: none !important;
+}
+#page-about .notion-image {
+  margin: auto !important;
+}
+#page-about .notion-toggle__summary {
+  display: block !important;
+}
+
+#block-a9d85c595f534844a2fdd06de3f40ba4,
+#block-3df061017ac1424aad1a1ae09ed8fdda,
+#block-df93acf9ec4b43298ac18cd41f431103 {
+  text-align: center !important;
+}
+
+/*
+  End: Page About
 */

@@ -82,11 +82,19 @@ h3 {
 }
 
 /* Page Container */
-.super-content {
+/* .super-content {
   padding: 0 !important;
   max-width: var(--st-max-width) !important ;
   margin: auto;
   padding: 0 !important;
+} */
+/* Full width page size */
+.super-content {
+  padding: 0 !important;
+  max-width: 100% !important;
+}
+.super-content.max-width {
+  max-width: var(--st-max-width) !important;
 }
 
 /* Container: Callout  */
@@ -375,11 +383,16 @@ body::-webkit-scrollbar-thumb {
   border: 3px solid var(--es-gray) !important;
   text-align: left !important;
 }
-
-/* 
-    **END**
-    PAGES: ABOUT
-*/
+/* Diferencia */
+#block-9b5f1a34ae534c28ab24d0342e6098fb {
+  text-align: center;
+}
+#block-f6a3811237af418682d47874989c7138 {
+  background: white;
+  text-align: left;
+  max-width: 900px;
+  border-radius: 20px !important;
+}
 
 #page-informe .notion-header__title-wrapper {
   display: none !important;
@@ -391,6 +404,37 @@ body::-webkit-scrollbar-thumb {
 
 .notion-embed__container > iframe {
   background: none !important;
+}
+/* 
+    **END**
+    PAGES: ABOUT
+*/
+
+/* 
+    **start**
+    PAGE: Contact
+*/
+#page-contacto {
+  text-align: center;
+}
+#page-contacto .notion-header {
+  margin-bottom: 0;
+}
+#page-contacto .notion-header__title-wrapper {
+  display: none !important;
+}
+#block-bfa029dc710942eba2a47f92354ce2d6 {
+  background-color: var(--es-gray);
+}
+
+#block-bfa029dc710942eba2a47f92354ce2d6 .notion-callout {
+  border-radius: var(--st-border-radius) !important;
+  background-color: var(--es-white);
+  height: 100%;
+}
+
+#page-contacto .notion-image {
+  margin-top: 0px !important;
 }
 
 /* Start: Responsive*/
