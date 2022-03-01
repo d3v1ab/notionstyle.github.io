@@ -382,6 +382,15 @@ START: Page course
   background-color: var(--es-white);
 }
 
+/* Who I'm I */
+#block-169e18749c7e47e59921bcb76dbd1a93 {
+  text-align: center;
+}
+
+#block-22cf795dce3d4b4899cb02f58b85addf {
+  text-align: left;
+}
+
 /* Course structure */
 
 #block-f69a43db4a9047409a68c403ec5baa51 {
@@ -391,6 +400,7 @@ START: Page course
   background-color: var(--es-white);
   color: var(--es-black) !important;
   text-align: left;
+  min-height: 195px;
 }
 
 /*
