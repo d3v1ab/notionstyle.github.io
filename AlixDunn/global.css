@@ -83,6 +83,7 @@ h1,
 h2,
 h3 {
   font-family: var(--st-heading-font), sans-serif !important;
+  margin-bottom: 13px !important;
 }
 
 /* Hide pages */
@@ -224,19 +225,19 @@ body::-webkit-scrollbar-thumb {
 
 /* Main Button */
 .notion-text__content .notion-link {
-  background: var(--es-white);
+  background: var(--es-blue);
   padding: 7px 26px;
   margin-top: 17px;
   display: inline-block;
   border-radius: var(--st-border-radius);
   opacity: 1 !important;
-  color: var(--es-text-dark) !important;
+  color: var(--es-white) !important;
   border-bottom: 0px !important;
   font-size: 20px;
 }
 .notion-callout .notion-text__content .notion-link:hover {
   transition: 0.1s ease-in-out;
-  opacity: 0.6;
+  opacity: 0.8 !important;
 }
 
 /* Footer */
@@ -323,13 +324,72 @@ block-5abc683c2f114a9b8ed5fb9cc7e6a5b1 {
 #page-about .notion-toggle__summary {
   display: block !important;
 }
+/* Whys */
+#block-a9d85c595f534844a2fdd06de3f40ba4 {
+  text-align: center;
+}
+#block-a9d85c595f534844a2fdd06de3f40ba4 .notion-callout {
+  text-align: left;
+}
 
-#block-a9d85c595f534844a2fdd06de3f40ba4,
+/* Little more and dig deeper */
+#block-2ae9a40d89294c0ab7d1009aaf81bd31,
 #block-3df061017ac1424aad1a1ae09ed8fdda,
 #block-df93acf9ec4b43298ac18cd41f431103 {
-  text-align: center !important;
+  text-align: center;
+}
+/*
+  End: Page About
+*/
+
+/*
+START: Page course
+*/
+
+#page-course .notion-image {
+  margin: auto !important;
+}
+
+#page-course .notion-header {
+  display: none !important;
+}
+/* Registratio */
+#block-b1753ddf70c8448b98723952b00380b8 {
+  text-align: center;
+}
+
+/*  */
+#block-9ad2beba4f304ddc895514ddd7357668 .notion-callout {
+  background-color: var(--es-white);
+}
+
+/* Meetings */
+#block-35d454dc1b9f47b0919c76d0f7bd3430 {
+  text-align: center;
+}
+#block-35d454dc1b9f47b0919c76d0f7bd3430 .notion-callout {
+  height: 100%;
+}
+
+/* Step by step */
+#block-c7b2296f5ca4467f8647948e49cedce2 {
+  text-align: center;
+}
+#block-c7b2296f5ca4467f8647948e49cedce2 .notion-callout {
+  background-color: var(--es-white);
+}
+
+/* Course structure */
+
+#block-f69a43db4a9047409a68c403ec5baa51 {
+  text-align: center;
+}
+#block-f69a43db4a9047409a68c403ec5baa51 .notion-callout {
+  background-color: var(--es-white);
+  color: var(--st-text-color);
+  text-align: left;
 }
 
 /*
-  End: Page About
+End: Page course
 */

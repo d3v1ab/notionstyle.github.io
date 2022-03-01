@@ -336,6 +336,7 @@ body::-webkit-scrollbar-thumb {
   background: none !important;
   padding: 0 !important;
   font-size: inherit !important;
+  margin-top: 0 !important;
 }
 /* 
     **END**
