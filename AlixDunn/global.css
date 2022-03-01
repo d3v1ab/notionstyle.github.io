@@ -18,8 +18,8 @@
 /* Brand Typography Desktop*/
 :root {
   --st-d-h1: 40px;
-  --st-d-h2: 36px;
-  --st-d-h3: 22px;
+  --st-d-h2: 27px;
+  --st-d-h3: 19px;
   --st-d-p: 18px;
   --st-d-text-sm: 15px;
 }
@@ -182,6 +182,8 @@ body::-webkit-scrollbar-thumb {
 .notion-callout .notion-callout {
   border-radius: var(--st-border-radius) !important;
   margin-bottom: 30px !important;
+  max-width: calc(1040px / 1.4);
+  margin: auto;
   /* height: 100% !important; */
   /* background-color: var(--es-white); */
 }
@@ -353,6 +355,7 @@ START: Page course
 #page-course .notion-header {
   display: none !important;
 }
+
 /* Registratio */
 #block-b1753ddf70c8448b98723952b00380b8 {
   text-align: center;
@@ -386,7 +389,7 @@ START: Page course
 }
 #block-f69a43db4a9047409a68c403ec5baa51 .notion-callout {
   background-color: var(--es-white);
-  color: var(--st-text-color);
+  color: var(--es-black) !important;
   text-align: left;
 }
 

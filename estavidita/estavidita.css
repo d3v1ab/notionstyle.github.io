@@ -262,21 +262,25 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* SECTION: CTA */
-#block-0cdbec691fcb4236b665d72bbd6c3249 {
+#block-0cdbec691fcb4236b665d72bbd6c3249,
+#block-f0381a41201247ada1716127231f08e2 {
   background-color: var(--es-blue);
   color: var(--es-white);
   text-align: center;
   padding: 20px !important;
 }
-#block-0cdbec691fcb4236b665d72bbd6c3249 .notion-link {
+#block-0cdbec691fcb4236b665d72bbd6c3249 .notion-link,
+block-f0381a41201247ada1716127231f08e2 .notion-link {
   margin-top: 10px !important;
 }
-#block-0f74191f8cf140f4bbe9d9a180d87d63 {
+#block-0f74191f8cf140f4bbe9d9a180d87d63,
+#block-6e6e0570b4fc4a66841dbf1b77e1dcb7 {
   display: flex;
   justify-content: center;
   text-align: start;
 }
-#block-0f74191f8cf140f4bbe9d9a180d87d63 .notion-column {
+#block-0f74191f8cf140f4bbe9d9a180d87d63 .notion-column,
+#block-6e6e0570b4fc4a66841dbf1b77e1dcb7 .notion-column {
   width: auto !important;
 }
 
