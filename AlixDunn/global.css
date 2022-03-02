@@ -403,6 +403,39 @@ START: Page course
   min-height: 195px;
 }
 
+/* FAQ */
+#block-c8999dbcb9864cb7b481faaf62bca96c {
+  text-align: center !important;
+}
+#block-c8999dbcb9864cb7b481faaf62bca96c .notion-toggle {
+  text-align: left !important;
+  max-width: 600px !important ;
+  margin: auto !important;
+}
+/* Testimonials */
+#block-0bb446e01bfc4fb09ddbfc5ad921e516 {
+  text-align: center;
+}
+#block-0bb446e01bfc4fb09ddbfc5ad921e516 .notion-callout {
+  text-align: left !important;
+}
+/* let's go*/
+#block-a40f4de5a7a741c89847533ba31719f9 {
+  text-align: center;
+}
 /*
 End: Page course
+*/
+
+/*
+Start: Page Relay
+*/
+#page-the-relay .notion-header {
+  display: none !important;
+}
+#block-ee0af5e4d28f488cbe287f5f2bfa514d {
+  text-align: center;
+}
+/*
+End: Page Relay
 */
