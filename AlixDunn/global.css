@@ -266,7 +266,8 @@ body::-webkit-scrollbar-thumb {
 #page-index .super-content .notion-link,
 #page-about .super-content .notion-link,
 #page-the-relay .super-content .notion-link,
-#page-course .super-content .notion-link {
+#page-course .super-content .notion-link,
+#block-2ecd25c71573488f9c00607f2227a2a1 .notion-link {
   background: var(--es-blue);
   padding: 7px 26px;
   margin-top: 17px;
@@ -276,6 +277,11 @@ body::-webkit-scrollbar-thumb {
   color: var(--es-white) !important;
   border-bottom: 0px !important;
   font-size: 20px;
+}
+/* Articles CTA button */
+#block-2ecd25c71573488f9c00607f2227a2a1 {
+  margin: auto;
+  text-align: center;
 }
 .notion-callout .notion-text__content .notion-link:hover {
   transition: 0.1s ease-in-out;
