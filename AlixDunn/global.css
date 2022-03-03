@@ -242,7 +242,7 @@ body::-webkit-scrollbar-thumb {
 }
 .super-navbar__menu {
   background: var(--es-blue) !important;
-  color: var(--es-gray-2) !important;
+  color: var(--es-white) !important;
 }
 .super-navbar__content {
   max-width: var(--st-max-width) !important;
