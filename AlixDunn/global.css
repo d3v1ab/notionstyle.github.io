@@ -178,7 +178,10 @@ h3 {
 #page-course .notion-callout .notion-callout__content > span {
   display: none;
 }
-
+/* Image */
+.super-content img {
+  border-radius: var(--st-border-radius) !important;
+}
 /* Scrollbar */
 body::-webkit-scrollbar {
   width: 7px;
@@ -286,26 +289,48 @@ body::-webkit-scrollbar-thumb {
 }
 
 /* Footer */
-#block-d804111d64f943a89e31920dd0591be2 {
+#block-d804111d64f943a89e31920dd0591be2,
+#block-ac72b9c13ccd4066a16ed83fbdf79310 {
   text-align: center;
   color: var(--es-gray-3) !important;
   background: var(--es-blue-1) !important;
 }
-#block-d804111d64f943a89e31920dd0591be2 .notion-link {
+#block-d804111d64f943a89e31920dd0591be2 .notion-link,
+#block-ac72b9c13ccd4066a16ed83fbdf79310 .notion-link {
   padding: 0 !important;
   background: none !important;
-  font-size: inherit;
+  font-size: inherit !important;
   color: inherit !important;
+  text-decoration: none;
+}
+#block-ac72b9c13ccd4066a16ed83fbdf79310 .notion-semantic-string .link {
+  border-bottom: 0px;
 }
 #block-d804111d64f943a89e31920dd0591be2 .notion-divider {
   border-color: var(--es-gray-3);
 }
-#block-d804111d64f943a89e31920dd0591be2 .notion-column-list {
+#block-d804111d64f943a89e31920dd0591be2 .notion-column-list,
+#block-ac72b9c13ccd4066a16ed83fbdf79310 .notion-column-list {
   display: inline-flex !important;
 }
-#block-d804111d64f943a89e31920dd0591be2 .notion-column {
+#block-d804111d64f943a89e31920dd0591be2 .notion-column,
+#block-ac72b9c13ccd4066a16ed83fbdf79310 .notion-column {
   width: 40px !important;
   margin-right: 5px;
+}
+#block-ac72b9c13ccd4066a16ed83fbdf79310 img {
+  border-radius: 0px !important;
+}
+
+/* Articles footer */
+#block-ac72b9c13ccd4066a16ed83fbdf79310 {
+  text-align: center !important;
+  border: none !important;
+  background: none !important;
+}
+#block-ac72b9c13ccd4066a16ed83fbdf79310 .notion-callout__icon,
+#block-ac72b9c13ccd4066a16ed83fbdf79310 > .notion-semantic-string {
+  display: none !important;
 }
 /* 
     END: CUSTOM BLOCKS
