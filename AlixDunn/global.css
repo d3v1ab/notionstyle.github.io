@@ -85,7 +85,12 @@ h3 {
   font-family: var(--st-heading-font), sans-serif !important;
   margin-bottom: 13px !important;
 }
-
+h1 {
+  text-align: center;
+}
+image {
+  border-radius: 15px;
+}
 /* Hide pages */
 #block-35682a8980e241a3a6c7e24dd69705a8 {
   display: none !important;
@@ -114,39 +119,63 @@ h3 {
 }
 .super-content.max-width {
   max-width: var(--st-max-width) !important;
+  padding: 0px 35px !important;
 }
 
 /* Container: Callout  */
-.notion-callout {
+#page-index .notion-callout,
+#page-about .notion-callout,
+#page-the-relay .notion-callout,
+#page-course .notion-callout {
   width: 100%;
   margin-top: 0 !important;
   margin-bottom: 0 !important;
-  /* margin: auto !important; */
   border: none !important;
   border-radius: 0px !important;
 }
-.super-content article > .notion-callout {
+#page-index .super-content article > .notion-callout,
+#page-about .super-content article > .notion-callout,
+#page-the-relay .super-content article > .notion-callout,
+#page-course .super-content article > .notion-callout {
   padding-top: var(--st-callout-padding-y) !important;
   padding-bottom: var(--st-callout-padding-y) !important;
 }
 
-.notion-callout__icon {
+#page-index .super-content .notion-callout__icon,
+#page-about .super-content .notion-callout__icon,
+#page-the-relay .super-content .notion-callout__icon,
+#page-course .super-content .notion-callout__icon {
   display: none !important;
 }
-.notion-callout__content {
+
+#page-index .notion-callout__content,
+#page-about .notion-callout__content,
+#page-the-relay .notion-callout__content,
+#page-course .notion-callout__content {
   width: 100% !important;
   max-width: var(--st-max-width) !important ;
   margin: auto !important;
   padding: 0px calc(env(safe-area-inset-left) + 15px) !important;
 }
-.notion-callout__content .notion-text__content {
+#page-index .super-content .notion-callout__content .notion-text__content,
+#page-about .super-content .notion-callout__content .notion-text__content,
+#page-the-relay .super-content .notion-callout__content .notion-text__content,
+#page-course .super-content .notion-callout__content .notion-text__content {
   padding: 0px !important;
 }
-.notion-callout__content .notion-text__children {
+
+#page-index .super-content .notion-callout__content .notion-text__children,
+#page-about .super-content .notion-callout__content .notion-text__children,
+#page-the-relay .super-content .notion-callout__content .notion-text__children,
+#page-course .super-content .notion-callout__content .notion-text__children {
   padding: 0 !important;
   margin: 0 !important;
 }
-.notion-callout .notion-callout__content > span {
+
+#page-index .notion-callout .notion-callout__content > span,
+#page-about .notion-callout .notion-callout__content > span,
+#page-the-relay .notion-callout .notion-callout__content > span,
+#page-course .notion-callout .notion-callout__content > span {
   display: none;
 }
 
@@ -179,7 +208,10 @@ body::-webkit-scrollbar-thumb {
 /* Website Gloabl Design system */
 
 /* Nested callouts */
-.notion-callout .notion-callout {
+#page-index .notion-callout .notion-callout,
+#page-about .notion-callout .notion-callout,
+#page-the-relay .notion-callout .notion-callout,
+#page-course .notion-callout .notion-callout {
   border-radius: var(--st-border-radius) !important;
   margin-bottom: 30px !important;
   max-width: calc(1040px / 1.4);
@@ -206,7 +238,8 @@ body::-webkit-scrollbar-thumb {
   opacity: 1 !important;
 }
 .super-navbar__menu {
-  background: var(--es-black) !important;
+  background: var(--es-blue) !important;
+  color: var(--es-gray-2) !important;
 }
 .super-navbar__content {
   max-width: var(--st-max-width) !important;
@@ -222,11 +255,15 @@ body::-webkit-scrollbar-thumb {
   border-radius: var(--st-border-radius) !important;
 }
 .super-navbar svg {
-  stroke: var(--es-white) !important;
+  stroke: var(--es-gray-2) !important;
 }
 
 /* Main Button */
-.notion-text__content .notion-link {
+
+#page-index .super-content .notion-link,
+#page-about .super-content .notion-link,
+#page-the-relay .super-content .notion-link,
+#page-course .super-content .notion-link {
   background: var(--es-blue);
   padding: 7px 26px;
   margin-top: 17px;
@@ -241,12 +278,24 @@ body::-webkit-scrollbar-thumb {
   transition: 0.1s ease-in-out;
   opacity: 0.8 !important;
 }
+/*Notion toggle*/
+.notion-toggle {
+  text-align: left !important;
+  max-width: 600px !important ;
+  margin: auto !important;
+}
 
 /* Footer */
 #block-d804111d64f943a89e31920dd0591be2 {
   text-align: center;
   color: var(--es-gray-3) !important;
   background: var(--es-blue-1) !important;
+}
+#block-d804111d64f943a89e31920dd0591be2 .notion-link {
+  padding: 0 !important;
+  background: none !important;
+  font-size: inherit;
+  color: inherit !important;
 }
 #block-d804111d64f943a89e31920dd0591be2 .notion-divider {
   border-color: var(--es-gray-3);
@@ -281,6 +330,9 @@ body::-webkit-scrollbar-thumb {
 /* Hero */
 #block-949390017a6f43299f518b8fe798e4d6 {
   min-height: 600px;
+}
+#block-949390017a6f43299f518b8fe798e4d6 h1 {
+  text-align: left;
 }
 
 /* Meeting culture */
@@ -326,6 +378,9 @@ block-5abc683c2f114a9b8ed5fb9cc7e6a5b1 {
 #page-about .notion-toggle__summary {
   display: block !important;
 }
+#block-9f0ae0cf58244afe8cbf01b099232479 h1 {
+  text-align: left;
+}
 /* Whys */
 #block-a9d85c595f534844a2fdd06de3f40ba4 {
   text-align: center;
@@ -356,6 +411,9 @@ START: Page course
   display: none !important;
 }
 
+#block-7312b3a29aa84039ba0bfb43b87991b3 h1 {
+  text-align: left;
+}
 /* Registratio */
 #block-b1753ddf70c8448b98723952b00380b8 {
   text-align: center;
@@ -407,11 +465,6 @@ START: Page course
 #block-c8999dbcb9864cb7b481faaf62bca96c {
   text-align: center !important;
 }
-#block-c8999dbcb9864cb7b481faaf62bca96c .notion-toggle {
-  text-align: left !important;
-  max-width: 600px !important ;
-  margin: auto !important;
-}
 /* Testimonials */
 #block-0bb446e01bfc4fb09ddbfc5ad921e516 {
   text-align: center;
@@ -439,3 +492,26 @@ Start: Page Relay
 /*
 End: Page Relay
 */
+/* 
+  Start: Responsivness
+*/
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 35px !important;
+  }
+  h2 {
+    font-size: 30px !important;
+  }
+  h3 {
+    font-size: 18px !important;
+  }
+  #page-index,
+  #page-about,
+  #page-the-relay,
+  #page-course {
+    text-align: center !important;
+  }
+  h1 {
+    text-align: center !important;
+  }
+}
