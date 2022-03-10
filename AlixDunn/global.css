@@ -126,7 +126,8 @@ h3 {
 #page-index .notion-callout,
 #page-about .notion-callout,
 #page-the-relay .notion-callout,
-#page-course .notion-callout {
+#page-course .notion-callout,
+#page-resources .notion-callout {
   width: 100%;
   margin-top: 0 !important;
   margin-bottom: 0 !important;
@@ -136,7 +137,8 @@ h3 {
 #page-index .super-content article > .notion-callout,
 #page-about .super-content article > .notion-callout,
 #page-the-relay .super-content article > .notion-callout,
-#page-course .super-content article > .notion-callout {
+#page-course .super-content article > .notion-callout,
+#page-resources .super-content article > .notion-callout {
   padding-top: var(--st-callout-padding-y) !important;
   padding-bottom: var(--st-callout-padding-y) !important;
 }
@@ -144,14 +146,16 @@ h3 {
 #page-index .super-content .notion-callout__icon,
 #page-about .super-content .notion-callout__icon,
 #page-the-relay .super-content .notion-callout__icon,
-#page-course .super-content .notion-callout__icon {
+#page-course .super-content .notion-callout__icon,
+#page-resources .super-content .notion-callout__icon {
   display: none !important;
 }
 
 #page-index .notion-callout__content,
 #page-about .notion-callout__content,
 #page-the-relay .notion-callout__content,
-#page-course .notion-callout__content {
+#page-course .notion-callout__content,
+#page-resources .notion-callout__content {
   width: 100% !important;
   max-width: var(--st-max-width) !important ;
   margin: auto !important;
@@ -160,14 +164,16 @@ h3 {
 #page-index .super-content .notion-callout__content .notion-text__content,
 #page-about .super-content .notion-callout__content .notion-text__content,
 #page-the-relay .super-content .notion-callout__content .notion-text__content,
-#page-course .super-content .notion-callout__content .notion-text__content {
+#page-course .super-content .notion-callout__content .notion-text__content,
+#page-resources .super-content .notion-callout__content .notion-text__content {
   padding: 0px !important;
 }
 
 #page-index .super-content .notion-callout__content .notion-text__children,
 #page-about .super-content .notion-callout__content .notion-text__children,
 #page-the-relay .super-content .notion-callout__content .notion-text__children,
-#page-course .super-content .notion-callout__content .notion-text__children {
+#page-course .super-content .notion-callout__content .notion-text__children,
+#page-resources .super-content .notion-callout__content .notion-text__children {
   padding: 0 !important;
   margin: 0 !important;
 }
@@ -547,4 +553,18 @@ End: Page Relay
   h1 {
     text-align: center !important;
   }
+}
+/*
+Start: Page page-resources
+*/
+#page-resources {
+  text-align: center !important;
+}
+
+#page-resources .notion-header {
+  display: none !important;
+}
+#page-resources .notion-image {
+  margin: auto !important;
+  text-align: center !important;
 }
