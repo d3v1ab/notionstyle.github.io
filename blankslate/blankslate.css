@@ -6,7 +6,7 @@
 #block-team,
 #block-work,
 #block-clients,
-#block-carreers,
+#block-careers,
 #block-connect {
   max-width: 100% !important;
 }
@@ -17,7 +17,7 @@
 #page-team .notion-header,
 #page-work .notion-header,
 #page-clients .notion-header,
-#page-carreers .notion-header,
+#page-careers .notion-header,
 #page-connect .notion-header {
   display: none !important;
 }
@@ -25,7 +25,7 @@
 #page-team .super-navbar,
 #page-work .super-navbar,
 #page-clients .super-navbar,
-#page-carreers .super-navbar,
+#page-careers .super-navbar,
 #page-connect .super-navbar {
   background: var(--bs-black) !important;
 }
@@ -36,19 +36,19 @@
 
 /* Brand Colors */
 :root {
-  --bs-black: #000000;
-  --bs-white: #ffffff;
+  --bs-black: #1d1d1b;
+  --bs-white: #f9f4f2;
   --bs-text-light: var(--bs-black);
   --bs-text-dark: var(--bs-white);
   --bs-text-gray: #a9a9a9;
-  --bs-brown: #a56248;
+  --bs-brown: #9b6c48;
   --bs-brown-1: #e2d9d0;
-  --bs-orange: #bb7a32;
-  --bs-gray: #97a2a7;
+  --bs-orange: #d28f3d;
+  --bs-gray: #65666b;
   --bs-gray-1: #f0f0f0;
   --bs-gray-2: #d3d3d3;
   --bs-gray-3: #3a3a3a;
-  --bs-green: #546c5e;
+  --bs-green: #596b5f;
   --bs-green-1: #7e9392;
   --bs-green-2: #b4b7ac;
   --bs-blue: #024959;
@@ -63,7 +63,7 @@
 
 /* Typography */
 body {
-  font-family: "DM Sans", sans-serif !important;
+  font-family: Inter, "Courier New" !important;
 }
 h1 {
   font-size: 74px !important;
@@ -76,9 +76,7 @@ h3 {
 }
 
 /* Page Container */
-.super-content {
-  padding: 0 !important;
-}
+
 .super-content article {
   max-width: 1300px !important;
   margin: auto;
@@ -215,7 +213,7 @@ body::-webkit-scrollbar-thumb {
   --menu-item-color: #eee;
   --card-title-size: 30px;
   --card-border-radius: 10px;
-  --gallery-size: 330px;
+  --gallery-size: 320px;
 }
 
 /* Increase the size of grid columns to 300px */
@@ -433,8 +431,8 @@ body::-webkit-scrollbar-thumb {
 
   /* padding: 4.2% 0px !important; */
   /* padding-top: 4.2% !important; */
-  padding-left: calc(env(safe-area-inset-left) + 15px) !important;
-  padding-right: calc(env(safe-area-inset-right) + 15px) !important;
+  padding-left: calc(env(safe-area-inset-left) + 20px) !important;
+  padding-right: calc(env(safe-area-inset-right) + 20px) !important;
 }
 .notion-callout__content .notion-text__children {
   padding: 0 !important;
@@ -527,6 +525,10 @@ video::-webkit-media-controls-enclosure {
   visibility: visible;
 }
 
+video::-webkit-media-controls-panel {
+  display: none !important;
+  opacity: 1 !important;
+}
 /*
 ****************************************************************************
 ****************************************************************************
@@ -594,6 +596,9 @@ video::-webkit-media-controls-enclosure {
   width: 100%;
   background: rgb(0 0 0 / 58%);
 }
+video {
+  pointer-events: none;
+}
 
 /* Hero Section */
 #block-d09a460f7f3b43deb556a7cae15a3a69 {
@@ -608,6 +613,7 @@ video::-webkit-media-controls-enclosure {
 }
 
 #block-d09a460f7f3b43deb556a7cae15a3a69 h1 {
+  animation: fadeInUp 1.5s;
   margin-top: 0;
   /* font-size: 75px !important; */
   color: var(--bs-white) !important;
@@ -617,15 +623,17 @@ video::-webkit-media-controls-enclosure {
   display: inline-block;
   text-decoration: underline;
 }
-
+#block-fe18c9ee2c1e45cbb6ebea1d4b37c59b {
+  animation: fadeInUp 1.5s;
+}
 /* ABOUT US  */
 #block-5e6890f8041942948cdcaad42ce6c171 {
   background: var(--bs-gray-2);
   text-align: center;
-  padding-top: 8% !important;
+  padding-top: 10% !important;
 }
 #block-5e6890f8041942948cdcaad42ce6c171 a {
-  background: white;
+  /* background: white; */
   border: none;
   text-decoration: none !important;
   padding: 10px;
@@ -861,7 +869,7 @@ video::-webkit-media-controls-enclosure {
 */
 
 /* hero */
-#page-carreers {
+#page-careers {
   background-color: var(--bs-gray-1) !important;
 }
 
@@ -918,3 +926,11 @@ video::-webkit-media-controls-enclosure {
 **************************************************************************** 
 ****************************************************************************    
 */
+#page-index .super-content,
+#page-team .super-content,
+#page-work .super-content,
+#page-clients .super-content,
+#page-careers .super-content,
+#page-connect .super-content {
+  padding: 0 !important;
+}
