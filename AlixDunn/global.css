@@ -623,6 +623,27 @@ Start: Page Relay
 #block-ee0af5e4d28f488cbe287f5f2bfa514d {
   text-align: center;
 }
+#page-the-relay .super-content .notion-link {
+  background: none !important;
+}
+#page-the-relay .notion-collection__header-wrapper {
+  display: none !important;
+}
+img,
+.notion-image {
+  border-radius: 0px !important;
+}
+
+.notion-property__title__icon-wrapper {
+  display: none !important;
+}
+.notion-collection-list {
+  max-width: 699px;
+  margin: auto;
+  border: 1px solid var(--es-gray-2);
+  padding: 12px;
+  border-radius: var(--st-border-radius) !important;
+}
 /*
 End: Page Relay
 */
@@ -662,4 +683,26 @@ Start: Page page-resources
 #page-resources .notion-image {
   margin: auto !important;
   text-align: center !important;
+}
+
+#page-resources .super-content .notion-link {
+  background: none !important;
+}
+#page-resources .notion-collection__header-wrapper {
+  display: none !important;
+}
+#page-resources img,
+#page-resources .notion-image {
+  border-radius: 0px !important;
+}
+
+#page-resources .notion-property__title__icon-wrapper {
+  display: none !important;
+}
+#page-resources .notion-collection-list {
+  max-width: 699px;
+  margin: auto;
+  border: 1px solid var(--es-gray-2);
+  padding: 12px;
+  border-radius: var(--st-border-radius) !important;
 }
