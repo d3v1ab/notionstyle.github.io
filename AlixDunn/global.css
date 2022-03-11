@@ -127,6 +127,7 @@ h3 {
 #page-about .notion-callout,
 #page-the-relay .notion-callout,
 #page-course .notion-callout,
+#page-course-for-teams .notion-callout,
 #page-resources .notion-callout {
   width: 100%;
   margin-top: 0 !important;
@@ -138,6 +139,7 @@ h3 {
 #page-about .super-content article > .notion-callout,
 #page-the-relay .super-content article > .notion-callout,
 #page-course .super-content article > .notion-callout,
+#page-course-for-teams .super-content article > .notion-callout,
 #page-resources .super-content article > .notion-callout {
   padding-top: var(--st-callout-padding-y) !important;
   padding-bottom: var(--st-callout-padding-y) !important;
@@ -147,6 +149,7 @@ h3 {
 #page-about .super-content .notion-callout__icon,
 #page-the-relay .super-content .notion-callout__icon,
 #page-course .super-content .notion-callout__icon,
+#page-course-for-teams .super-content .notion-callout__icon,
 #page-resources .super-content .notion-callout__icon {
   display: none !important;
 }
@@ -155,6 +158,7 @@ h3 {
 #page-about .notion-callout__content,
 #page-the-relay .notion-callout__content,
 #page-course .notion-callout__content,
+#page-course-for-teams .notion-callout__content,
 #page-resources .notion-callout__content {
   width: 100% !important;
   max-width: var(--st-max-width) !important ;
@@ -165,6 +169,10 @@ h3 {
 #page-about .super-content .notion-callout__content .notion-text__content,
 #page-the-relay .super-content .notion-callout__content .notion-text__content,
 #page-course .super-content .notion-callout__content .notion-text__content,
+#page-course-for-teams
+  .super-content
+  .notion-callout__content
+  .notion-text__content,
 #page-resources .super-content .notion-callout__content .notion-text__content {
   padding: 0px !important;
 }
@@ -173,6 +181,10 @@ h3 {
 #page-about .super-content .notion-callout__content .notion-text__children,
 #page-the-relay .super-content .notion-callout__content .notion-text__children,
 #page-course .super-content .notion-callout__content .notion-text__children,
+#page-course-for-teams
+  .super-content
+  .notion-callout__content
+  .notion-text__children,
 #page-resources .super-content .notion-callout__content .notion-text__children {
   padding: 0 !important;
   margin: 0 !important;
@@ -181,7 +193,8 @@ h3 {
 #page-index .notion-callout .notion-callout__content > span,
 #page-about .notion-callout .notion-callout__content > span,
 #page-the-relay .notion-callout .notion-callout__content > span,
-#page-course .notion-callout .notion-callout__content > span {
+#page-course .notion-callout .notion-callout__content > span,
+#page-course-for-teams .notion-callout .notion-callout__content > span {
   display: none;
 }
 /* Image */
@@ -220,7 +233,8 @@ body::-webkit-scrollbar-thumb {
 #page-index .notion-callout .notion-callout,
 #page-about .notion-callout .notion-callout,
 #page-the-relay .notion-callout .notion-callout,
-#page-course .notion-callout .notion-callout {
+#page-course .notion-callout .notion-callout,
+#page-course-for-teams .notion-callout .notion-callout {
   border-radius: var(--st-border-radius) !important;
   margin-bottom: 30px !important;
   max-width: calc(1040px / 1.4);
@@ -273,6 +287,7 @@ body::-webkit-scrollbar-thumb {
 #page-about .super-content .notion-link,
 #page-the-relay .super-content .notion-link,
 #page-course .super-content .notion-link,
+#page-course-for-teams .super-content .notion-link,
 #block-2ecd25c71573488f9c00607f2227a2a1 .notion-link {
   background: var(--es-blue);
   padding: 7px 26px;
@@ -453,7 +468,7 @@ START: Page course
 #block-7312b3a29aa84039ba0bfb43b87991b3 h1 {
   text-align: left;
 }
-/* Registratio */
+/* Registration */
 #block-b1753ddf70c8448b98723952b00380b8 {
   text-align: center;
 }
@@ -502,6 +517,86 @@ START: Page course
 
 /* FAQ */
 #block-c8999dbcb9864cb7b481faaf62bca96c {
+  text-align: center !important;
+}
+/* Testimonials */
+#block-0bb446e01bfc4fb09ddbfc5ad921e516 {
+  text-align: center;
+}
+#block-0bb446e01bfc4fb09ddbfc5ad921e516 .notion-callout {
+  text-align: left !important;
+}
+/* let's go*/
+#block-a40f4de5a7a741c89847533ba31719f9 {
+  text-align: center;
+}
+/*
+End: Page course
+*/
+/*
+START: Page course for teams
+*/
+
+#page-course-for-teams .notion-image {
+  margin: auto !important;
+}
+
+#page-course-for-teams .notion-header {
+  display: none !important;
+}
+
+#block-8839eefcf1fb42e390a2ce7129cd4650 h1 {
+  text-align: left;
+}
+/* Registration */
+#block-768edcd7eb8647699e957b0d9f8fec90 {
+  text-align: center;
+}
+
+/*  */
+#block-3e26f3d3907347faa8e090da52e0ef03 .notion-callout {
+  background-color: var(--es-white);
+}
+
+/* Meetings */
+#block-1299a956d36646f28553f011dfe23ea4 {
+  text-align: center;
+}
+#block-b590ce6f639f448bbd03d35fb554c156 .notion-callout {
+  height: 100%;
+}
+
+/* Step by step */
+#block-167ee2574e68493c8f19910fa3cf89f0 {
+  text-align: center;
+}
+#block-167ee2574e68493c8f19910fa3cf89f0 .notion-callout {
+  background-color: var(--es-white);
+}
+
+/* Who I'm I */
+#block-783566270b5e4959bb40f8a7bbf78377 {
+  text-align: center;
+}
+
+#block-22cf795dce3d4b4899cb02f58b85addf {
+  text-align: left;
+}
+
+/* Course structure */
+
+#block-4291de3d31714872a4fc30269a8f0a42 {
+  text-align: center;
+}
+#block-4291de3d31714872a4fc30269a8f0a42 .notion-callout {
+  background-color: var(--es-white);
+  color: var(--es-black) !important;
+  text-align: left;
+  min-height: 305px;
+}
+
+/* FAQ */
+#block-1909766637884b119ba9006ef2421c54 {
   text-align: center !important;
 }
 /* Testimonials */
