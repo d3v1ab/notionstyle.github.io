@@ -291,6 +291,20 @@ block-f0381a41201247ada1716127231f08e2 .notion-link {
   background-color: var(--es-black);
 }
 
+/* SECTION: New reviews */
+#block-2628c229706b4320b9e145ae5efed372
+{
+    max-width: 763px;
+    margin: auto !important;
+    text-align: center !important;
+}
+
+/* Image  */
+#block-13161ae7485748f2927aa002f8d11839
+{
+margin: auto !important;
+}
+
 /* SECTION: GOOGLE REVIEWS */
 #block-109355121a5049cda55c6d41592bb0a5 {
   background-color: var(--es-gray-2) !important;
