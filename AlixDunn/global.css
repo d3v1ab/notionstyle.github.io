@@ -122,6 +122,10 @@ h3 {
   padding: 40px 35px !important;
 }
 
+#page-content .super-content{
+  display:none;
+}
+
 /* Container: Callout  */
 #page-index .notion-callout,
 #page-about .notion-callout,
