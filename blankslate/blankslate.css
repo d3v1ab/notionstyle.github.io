@@ -934,3 +934,9 @@ video {
 #page-connect .super-content {
   padding: 0 !important;
 }
+
+
+#block-team .notion-column-list,#block-clients .notion-column-list{
+ justify-content: start !important;
+ align-items: start;
+}
